@@ -1249,11 +1249,11 @@ h1, h2, h3, h4, h5 {
         padding: 3.5em 0;
 
         @include mq($medium) {
-          padding: 2em 1em;
+          padding: 1em 1em;
         }
 
         @include mq($med-large) {
-          padding: 3.5vw 1em;
+          padding: 1em 1em;
         }
 
         img {
