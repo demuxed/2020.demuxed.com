@@ -1246,7 +1246,7 @@ h1, h2, h3, h4, h5 {
           url('/images/svg/sponsor-border-l.svg');
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
         background-position: top, right, bottom, left;
-        padding: 3.5em 0;
+        padding: 1em 0;
 
         @include mq($medium) {
           padding: 1em 1em;
@@ -1257,7 +1257,7 @@ h1, h2, h3, h4, h5 {
         }
 
         img {
-          max-width: 250px;
+          max-width: 350px;
 
           @include mq($med-large) {
             max-width: 100%;
@@ -1283,7 +1283,7 @@ h1, h2, h3, h4, h5 {
 
       li {
         margin-bottom: 1em;
-        padding: 1em 0;
+        padding: 0 0;
         list-style-type: none;
         width: 48%;
         background-image:
