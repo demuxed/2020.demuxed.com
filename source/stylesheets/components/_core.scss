@@ -1,0 +1,1462 @@
+/* Page Core / Structure */
+html{
+  font-family: $default-sans;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: $line-height-ratio;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,body{
+  height: 100%;
+}
+
+.wrapper{
+  position: relative;
+  @include animate-in;
+  background-color: $brand-yellow;
+}
+  
+canvas{
+  -ms-touch-action: double-tap-zoom;
+}
+
+a{
+  color: $link-color;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $default-sans;
+}
+
+.container {
+  position: relative;
+}
+
+.main-content {
+  li {
+    line-height: 1.6em;
+  }
+
+  p {
+    @include font-size(16px);
+    line-height: 1.6em;
+
+    a {
+      &:hover {
+      border-bottom: solid 2px $brand-yellow;
+      }
+    }
+  }
+
+  .container {
+    padding: 5vw 8vw;
+
+    @include mq($medium) {
+      padding: 5vw 5vw;
+    }
+  }
+}
+
+.section-heading {
+  text-transform: uppercase;
+  font-family: $headline-font;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.5em;
+  line-height: 1.2;
+
+  /*font clamp fallbacks*/
+    font-size: 5.8vw;
+
+    @include mq($small) {
+      font-size: 4vw;
+    }
+
+    @include mq($med-large) {
+      font-size: 2.8vw;
+    }
+
+    @include mq($super-wide) {
+      font-size: 2.3vw;
+    }
+  /*font clamp fallbacks*/
+
+  font-size: clamp(2rem, 3.4vw, 5rem)!important;
+
+  &:after {
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    font-size: clamp(0.8rem, 1.1vw, 1.2rem)!important;
+    color: #000;
+    content: "-";
+    display: block;
+    @extend %black-line;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  span {
+    /*font clamp fallbacks*/
+      font-size: 4.5vw;
+
+      @include mq($small) {
+        font-size: 3.5vw;
+      }
+
+      @include mq($medium) {
+        font-size: 3vw;
+      }
+
+      @include mq($large) {
+        font-size: 2vw;
+      }
+    /*font clamp fallbacks*/
+
+      font-family: $default-sans;
+      display: block;
+      color: $brand-yellow;
+      text-transform: capitalize;
+      font-weight: 500;
+      margin: 0.2em 0 1.6em;
+      font-size: clamp(1.6rem, 2vw, 2.1rem)!important;
+  }
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+
+  .container {
+    padding: 0;
+    padding-top: 3vw;
+  }
+  
+  .hero__text {
+    position: relative;
+    z-index: 10;
+    padding: 0 6vw;
+    
+     @include mq($medium) {
+       display: inline-block;
+    }
+    
+     @include mq($med-large) {
+       width: 80%;
+    }
+    
+    @include mq($large) {
+      padding: 0;
+   }
+   
+   .hero__heading {
+    font-family: $headline-font;
+    text-transform: uppercase;
+
+    .breaker {
+      display: none;
+
+      @include mq($small) {
+        display: block;
+      }
+    }
+
+    /*font clamp fallbacks*/
+    font-size: 6.5vw;
+
+    @include mq($small) {
+      font-size: 4.5vw;
+    }
+
+    @include mq($med-large) {
+      font-size: 5vw;
+    }
+    /*font clamp fallbacks*/
+
+     font-size: clamp(2rem, 5vw, 6rem)!important;
+     font-weight: 900;
+     margin-bottom: 0.3em;
+     line-height: 1.11;
+     
+    @include mq($medium) {
+      /*max-width: 80%;*/
+      margin: 0 auto 0.3em;
+    }
+
+    @include mq($med-large) {
+      max-width: 100%;
+      margin: 0 0 0.2em 0;
+    }
+   }
+
+  .hero__sub-heading {
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    text-align: center;
+
+    /*font clamp fallbacks*/
+      font-size: 4vw;
+
+      @include mq($small) {
+        font-size: 2.8vw;
+      }
+
+      @include mq($med-large) {
+        font-size: 1.75vw;
+      }
+
+      @include mq($super-wide) {
+        font-size: 1.3vw;
+      }
+    /*font clamp fallbacks*/
+
+    font-size: clamp(1.3rem, 1.7vw, 3rem)!important;
+
+    @include mq($small) {
+      max-width: 80%;
+      margin: 0 auto 1.6em;
+    }
+
+    @include mq($med-large) {
+      max-width: 65%;
+    }
+
+    @include mq($large) {
+      max-width: 55%;
+    }
+
+    @include mq($super-wide) {
+      max-width: 50%;
+    }
+
+    @include mq($jumbo) {
+      max-width: 40%;
+    }
+  }
+
+   .hero__btn-group {
+
+   }
+
+   .hero__btn {
+      z-index: 20;
+      position: relative;
+      @include btn;
+      width: 100%;
+      padding: 1em 0;
+      @include transition-all;
+      margin-bottom: 1em;
+      background-image: url('/images/svg/hero-btn-bg.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      color: #fff;
+      background-color: $brand-yellow;
+
+     &:last-child {
+      margin-bottom: 0;
+     }
+
+     &:hover {
+      color: $brand-yellow;
+      background-color: $brand-yellow;
+     }
+
+      /*font clamp fallbacks*/
+        font-size: 3.6vw;
+
+        @include mq($small) {
+          font-size: 2.3vw;
+        }
+
+        @include mq($med-large) {
+          font-size: 1.5vw;
+        }
+
+        @include mq($super-wide) {
+          font-size: 1vw;
+        }
+
+        @include mq($jumbo) {
+          font-size: 0.8vw;
+        }
+      /*font clamp fallbacks*/
+
+     font-size: clamp(1.1rem, 1.4vw, 5rem)!important;
+
+     @include mq($tiny) {
+       width: 65%;
+    }
+
+     @include mq($small) {
+       padding: 0.8em;
+       width: 12em;
+       margin: 0;
+       margin-left: 1em;
+
+       &:first-child {
+        margin-left: 0;
+       }
+     }
+
+     @include mq($x-large) {
+      width: 13em;
+     }
+   }
+
+    .mailing-list {
+      background-image: url('/images/svg/hero-btn-bg2.svg');
+      color: #000;
+
+      &:hover {
+        color: $brand-yellow;
+      }
+    }
+  }
+  
+  .hero__img-mobile {
+    width: 100%;
+    margin-bottom: 2em;
+
+    @include mq($med-large) {
+      display: none;
+    }
+  }
+
+  .hero__img {
+    width: 100%;
+    margin-bottom: 2em;
+    display: none;
+    
+    @include mq($med-large) {
+      display: block;
+      margin-top: -18vw;
+    }
+
+    @include mq($large) {
+      margin-top: -21vw;
+    }
+  }
+}
+
+.why-watch .container {
+  @include mq($large) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include mq($xl-large) {
+    align-items: center;
+  }
+}
+
+.why-watch {
+  .section-heading {
+    @include mq($large) {
+      padding-left: 0.96em;
+      text-align: left;
+
+      &:after {
+        background-position: left;
+      }
+    }
+  }
+}
+
+.why-text {
+  @include mq($large) {
+    width: 40%;
+  }
+}
+
+.why-img {
+  display: none;
+
+  @include mq($large) {
+    display: block;
+    width: 50%;
+  }
+}
+
+.why-img__mobile {
+  width: 100%;
+  margin-bottom: 2em;
+
+  @include mq($large) {
+    display: none;
+  }
+}
+
+.why__list {
+  margin-bottom: 5em;
+  
+  li {
+    margin-bottom: 2em;
+    list-style-type: none;
+
+    @include mq($small) {
+      padding-left: 4em;
+      background-image: url('/images/svg/white-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: left 0.6vw;
+      background-size: 40px;
+    }
+    
+    @include mq($large) {
+      margin-bottom: 3vw;
+    }
+  }
+  
+  h3 {
+    font-family: $default-sans;
+    font-weight: 900;
+    margin-bottom: 0.4em;
+    line-height: 1.3;
+    text-transform: uppercase;   
+
+    /*font clamp fallbacks*/
+      font-size: 4vw;
+
+      @include mq($small) {
+        font-size: 3vw;
+      }
+
+      @include mq($med-large) {
+        font-size: 2.8vw;
+      }
+
+      @include mq($large) {
+        font-size: 2vw;
+      }
+
+      @include mq($super-wide) {
+        font-size: 1.8vw;
+      }
+    /*font clamp fallbacks*/
+
+    font-size: clamp(1.4rem, 1.6vw, 2.6rem)!important;
+  }
+  
+  p {
+    line-height: 1.6;
+
+    /*font clamp fallbacks*/
+      font-size: 3.6vw;
+
+      @include mq($small) {
+        font-size: 2.3vw;
+      }
+
+      @include mq($med-large) {
+        font-size: 1.5vw;
+      }
+
+      @include mq($super-wide) {
+        font-size: 1vw;
+      }
+
+      @include mq($jumbo) {
+        font-size: 0.8vw;
+      }
+    /*font clamp fallbacks*/
+
+    font-size: clamp(1.15rem, 1.3vw, 1.6rem)!important;
+  }
+  
+  a {
+    background-color: #fff;
+    padding: 0 0.4em;
+    color: #000;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+
+.black-background {
+  background-color: #000;
+  background-image: url("/images/svg/rough-edge-top.svg"), url("/images/svg/rough-edge-btm.svg");
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 110%, 110%;
+  box-shadow: inset 0px 2px 0px 0px rgba(253,209,64,1), inset 0px -2px 0px 0px rgba(253,209,64,1);
+  color: #fff;
+  padding: 5vw 0;
+
+  .section-heading {
+    color: #fff;
+
+    &:after {
+      color: #fff;
+      @extend %white-line;
+    }
+  }
+
+  .container {
+    padding: 14vw 5vw;
+  }
+
+}
+
+.speakers {
+  @include mq($medium) {
+    background-image: url('/images/svg/yellow-dots1.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 6%;
+    background-size: 14%;
+  }
+
+  .container {
+    padding-bottom: 0;
+
+    @include mq($xl-large) {
+      padding: 14vw 14vw 0;
+    }
+  }
+}
+
+.speakers-list {
+      
+    @include mq($medium) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
+  .speakers-list__card {
+    color: #fff;
+    list-style-type: none;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include mq($small) {
+      justify-content: center;
+    }
+
+    @include mq($medium) {
+      width: 45%;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+
+    @include mq($large) {
+      align-items: center;
+      margin-bottom: 4em;
+    }
+  
+    .speakers-list__img-wrap {
+      width: 23%;
+      background-image: url("/images/svg/speaker-bg.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 10px;
+      text-align: center;   
+
+      @include mq($medium) {
+        width: 33%;
+      }
+
+      .speakers-list__img {
+        display: inline-block;
+        border-radius: 100px;
+      }
+    }
+
+    .speakers-list__text {
+      width: 55%;
+
+      @include mq($small) {
+        padding-left: 2em;
+      }
+
+      @include mq($medium) {
+        padding-left: 0;
+      }
+
+      .speakers-list__name {
+
+      /*font clamp fallbacks*/
+        font-size: 3.5vw;
+
+        @include mq($medium) {
+          font-size: 2.2vw;
+        }
+
+        @include mq($med-large) {
+          font-size: 1.6vw;
+        }
+
+        @include mq($super-wide) {
+          font-size: 1.3vw;
+        }
+      /*font clamp fallbacks*/
+
+        font-size: clamp(1.3rem, 1.6vw, 2.1rem)!important;
+        margin-bottom: 0.3em;
+        line-height: 1.2;
+      }
+
+      .speakers-list__company {
+
+      /*font clamp fallbacks*/
+        font-size: 3.5vw;
+
+        @include mq($medium) {
+          font-size: 2.2vw;
+        }
+
+        @include mq($med-large) {
+          font-size: 1.6vw;
+        }
+
+        @include mq($super-wide) {
+          font-size: 1.3vw;
+        }
+      /*font clamp fallbacks*/
+
+        font-size: clamp(1.1rem, 1.5vw, 2rem)!important;
+        text-transform: uppercase;
+        color: $brand-yellow;
+        margin-bottom: 0.4em;
+      }
+      .speakers-list__talk-title {
+        margin-bottom: 0.6em;
+
+        @include mq($large) {
+          margin-bottom: 1em;
+        }
+
+        /*font clamp fallbacks*/
+          font-size: 3.3vw;
+
+          @include mq($medium) {
+            font-size: 2.2vw;
+          }
+
+          @include mq($med-large) {
+            font-size: 1.6vw;
+          }
+
+          @include mq($xl-large) {
+            font-size: 1.2vw;
+          }
+
+          @include mq($super-wide) {
+            font-size: 1vw;
+          }
+        /*font clamp fallbacks*/
+
+        color: #fff;
+        font-size: clamp(1.1rem, 1.2vw, 1.4rem)!important;
+      }
+
+      .speakers-list__talk-overview {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        background-image: url("/images/svg/nav-underline.svg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 0.6em;
+
+        /*font clamp fallbacks*/
+          font-size: 3vw;
+
+          @include mq($small) {
+            font-size: 2.2vw;
+          }
+
+          @include mq($medium) {
+            font-size: 1.8vw;
+          }
+
+          @include mq($med-large) {
+            font-size: 1.4vw;
+          }
+
+          @include mq($large) {
+            font-size: 1.2vw;
+          }
+
+          @include mq($super-wide) {
+            font-size: 0.8vw;
+          }
+        /*font clamp fallbacks*/
+        
+        font-size: clamp(0.9rem, 1.2vw, 1.3rem)!important;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.schedule {
+  @include mq($medium) {
+    background-image: url('/images/svg/yellow-dots2.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 16%;
+  }
+}
+
+.days {
+  @include mq($med-large) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /*hide and show days*/
+  .wednesday, .thursday {
+    display: none;
+      @include mq($med-large) {
+        display: block;
+      }
+  }
+
+  .tuesday {
+    .date {
+      display: none;
+
+      @include mq($med-large) {
+        display: block;
+      }
+    }
+  }
+  /*hide and show days*/
+
+  .schedule__day-switcher {
+      @include btn;
+      padding: 1em 0;
+      margin-bottom: 1em;
+      background-image: url('/images/svg/down-arrow.svg'), url('/images/svg/switcher-bg.svg');
+      background-repeat: no-repeat;
+      background-position: right, center;
+      background-size: 55px, 100%;
+      background-color: #000;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+      padding-left: 2em;
+
+
+      @include mq($tiny) {
+        max-width: 85%;
+      }
+
+      @include mq($small) {
+        max-width: 55%;
+      }
+
+      @include mq($medium) {
+        max-width: 40%;
+      }
+
+      @include mq($med-large) {
+        display: none;
+      }
+
+      /*font clamp fallbacks*/
+        font-size: 3.6vw;
+
+        @include mq($small) {
+          font-size: 2.3vw;
+        }
+      /*font clamp fallbacks*/
+     font-size: clamp(1.3rem, 1.4vw, 2rem)!important;
+  }
+
+  .wednesday {
+    @include mq($large) {
+      background-image: url('/images/svg/schedule-vr.svg'), url('/images/svg/schedule-vr-2.svg');
+      background-repeat: repeat-y, repeat-y;
+      background-position: right, left;
+    }
+  }
+
+  .day {
+    list-style-type: none;
+    margin-bottom: 4em;
+
+    @include mq($med-large) {
+      width: 48%;
+    }
+
+    @include mq($large) {
+      width: 33%;
+      padding: 0 3%
+    }
+
+    li {
+      margin-bottom: 2em;
+
+       @include mq($large) {
+        margin-bottom: 3em;
+      }
+
+      @include mq($wide) {
+        margin-bottom: 4em;
+      }
+    }
+
+    .date {
+      /*font clamp fallbacks*/
+        font-size: 5vw;
+
+        @include mq($medium) {
+          font-size: 4vw;
+        }
+
+        @include mq($med-large) {
+          font-size: 2vw;
+        }
+
+        @include mq($xl-large) {
+          font-size: 1.8vw;
+        }
+
+        @include mq($super-wide) {
+          font-size: 1.6vw;
+        }
+      /*font clamp fallbacks*/
+        color: $brand-yellow;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: clamp(1.8rem, 2vw, 2.4rem)!important;
+    }
+
+    .break {
+      background-image: url('/images/svg/break-line1.svg'), url('/images/svg/break-line2.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-position: top, bottom;
+      background-size: 85%, 85%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em 0;
+
+
+      .break__type {
+        /*font clamp fallbacks*/
+          font-size: 4vw;
+
+          @include mq($medium) {
+            font-size: 3vw;
+          }
+
+          @include mq($med-large) {
+            font-size: 1.8vw;
+          }
+
+          @include mq($xl-large) {
+            font-size: 1.5vw;
+          }
+
+          @include mq($super-wide) {
+            font-size: 1.3vw;
+          }
+        /*font clamp fallbacks*/
+
+        font-size: clamp(1.5rem, 1.6vw, 1.8rem)!important;
+        margin-right: 0.6em;
+      }
+
+      .break__img {
+        width: 80px;
+      }
+    }
+
+    .talk {
+      display: flex;
+      justify-content: center;
+
+      .talk__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 13%;
+        max-width: 100px;
+        background-image: url("/images/svg/speaker-bg.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0.65vw;
+        text-align: center;  
+
+        @include mq($large) {
+          width: 22%;
+          padding: 6px;
+        }
+
+        @include mq($wide) {
+          width: 18%;
+          padding: 8px;
+
+        }
+
+        .schedule-list__img {
+          border-radius: 100px;
+        }
+      }
+
+      .talk__text {
+        width: 80%;
+        padding-left: 2em;
+
+        @include mq($medium) {
+          width: 60%;
+        } 
+
+        @include mq($large) {
+          width: 77%;
+        }
+
+        @include mq($wide) {
+          width: 82%;
+        }
+
+        .talk__time {
+        /*font clamp fallbacks*/
+          font-size: 4vw;
+
+          @include mq($medium) {
+            font-size: 3vw;
+          }
+
+          @include mq($med-large) {
+            font-size: 1.8vw;
+          }
+
+          @include mq($xl-large) {
+            font-size: 1.3vw;
+          }
+
+          @include mq($super-wide) {
+            font-size: 1vw;
+          }
+        /*font clamp fallbacks*/
+
+          font-size: clamp(1.3rem, 1.6vw, 2.1rem)!important;
+          margin-bottom: 0.3em;
+          line-height: 1.5;
+          color: $brand-yellow;
+        }
+
+        .talk__name {
+        /*font clamp fallbacks*/
+          font-size: 4vw;
+
+          @include mq($medium) {
+            font-size: 3vw;
+          }
+
+          @include mq($med-large) {
+            font-size: 1.8vw;
+          }
+
+          @include mq($xl-large) {
+            font-size: 1.3vw;
+          }
+
+          @include mq($super-wide) {
+            font-size: 1vw;
+          }
+        /*font clamp fallbacks*/
+          font-size: clamp(1.3rem, 1.6vw, 2.1rem) !important;
+          margin-bottom: 0.1em;
+          line-height: 1.5;
+        }
+
+        .talk__desc {
+          color: #fff;
+          line-height: 1.7;
+
+          /*font clamp fallbacks*/
+            font-size: 3.3vw;
+
+            @include mq($medium) {
+              font-size: 2vw;
+            }
+
+            @include mq($med-large) {
+              font-size: 1.6vw;
+            }
+
+            @include mq($xl-large) {
+              font-size: 1.2vw;
+            }
+
+            @include mq($super-wide) {
+              font-size: 1vw;
+            }
+          /*font clamp fallbacks*/
+
+          font-size: clamp(1.1rem, 1.2vw, 1.4rem)!important;
+
+          &:hover {
+            color: $brand-yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-us {
+  overflow: hidden;
+
+  @include mq($large) {
+    background-image: url('/images/svg/black-dots.svg');
+    background-repeat: no-repeat;
+    background-position: 10% 25%;
+    background-size: 16%;
+  }
+
+  .about-us__img-container1 {
+    background-image: url('/images/svg/pic1-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: 2em;
+
+    @include mq($medium) {
+      width: 80%;
+      margin-left: 30%;
+      margin-bottom: -6%;
+    }
+
+    .about-us__img1 {
+      width: 100%;
+    }
+  }
+
+  .about-us__img-container2 {
+    background-image: url('/images/svg/pic2-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: 2em;
+
+    @include mq($medium) {
+      width: 80%;
+      margin-left: -6%;
+    }
+
+    .about-us__img2 {
+      width: 100%;
+    }
+  }
+
+  .about-text {
+    .section-heading {
+      text-align: left;
+        &:after {
+          background-position: left;
+        }
+    }
+
+    @include mq($small) {
+      margin: 0 auto 4em;
+      max-width: 80%;
+    }
+
+    @include mq($large) {
+      margin-bottom: 6em;
+      max-width: 60%;
+    }
+
+    @include mq($wide) {
+      max-width: 50%;
+    }
+
+    p {
+      /*font clamp fallbacks*/
+        font-size: 3.6vw;
+
+        @include mq($small) {
+          font-size: 2.3vw;
+        }
+
+        @include mq($med-large) {
+          font-size: 1.8vw;
+        }
+
+        @include mq($large) {
+          font-size: 1.5vw;
+        }
+
+        @include mq($super-wide) {
+          font-size: 1vw;
+        }
+
+        @include mq($jumbo) {
+          font-size: 0.8vw;
+        }
+      /*font clamp fallbacks*/
+
+      font-size: clamp(1.2rem, 1.4vw, 1.8rem)!important;
+      line-height: 1.6;
+      margin-bottom: 2em;
+    }
+  }
+
+}
+
+.sponsors {
+
+  @include mq($med-large) {
+    background-image: url('/images/svg/footer-illo.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 4em;
+  }
+
+  .sponsor-title {
+    /*font clamp fallbacks*/
+      font-size: 3vw;
+
+      @include mq($small) {
+        font-size: 2.2vw;
+      }
+
+      @include mq($medium) {
+        font-size: 1.8vw;
+      }
+
+      @include mq($large) {
+        font-size: 1.2vw;
+      }
+
+      @include mq($super-wide) {
+        font-size: 1vw;
+      }
+    /*font clamp fallbacks*/
+
+    font-size: clamp(1rem, 1.2vw, 1.4rem)!important;
+
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    padding: 0.6em 2em;
+    background-image: url('/images/svg/sponsor-text-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    span {
+      color: $brand-yellow;
+    }
+
+    @include mq($medium) {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .main-sponsors {
+    margin-bottom: 4em;
+
+    @include mq($medium) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include mq($wide) {
+      margin-bottom: 6em;
+    }
+
+    li {
+      width: 100%;
+      text-align: center;
+      list-style-type: none;
+      margin: 0 auto;
+      margin-bottom: 2em;
+      position: relative;
+
+      @include mq($small){
+        width: 68%;
+      }
+
+      @include mq($medium) {
+        width: 30%;
+        padding-bottom: 2em;
+        background-image: url('/images/svg/main-sponsor-shad.svg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+      }
+
+      @include mq($xl-large) {
+       padding-bottom: 4em; 
+      }
+
+      .sponsor-person-l {
+        display: none;
+
+        @include mq($medium) {
+          display: block;
+          position: absolute;
+          width: 60px;
+          bottom: 0;
+          left: -30px;
+        }
+
+        @include mq($wide) {
+          width: 80px;
+        }
+      }
+
+      .sponsor-person-r {
+        display: none;
+
+        @include mq($medium) {
+          display: block;
+          position: absolute;
+          width: 73px;
+          bottom: 0;
+          right: -30px;
+        }
+
+        @include mq($wide) {
+          width: 93px;
+        }
+      }
+
+      .sponsor {
+        background-color: #fff;
+        background-image:
+          url('/images/svg/sponsor-border-t.svg'),
+          url('/images/svg/sponsor-border-r.svg'),
+          url('/images/svg/sponsor-border-b.svg'),
+          url('/images/svg/sponsor-border-l.svg');
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: top, right, bottom, left;
+        padding: 3.5em 0;
+
+        @include mq($medium) {
+          padding: 2em 1em;
+        }
+
+        @include mq($med-large) {
+          padding: 3.5vw 1em;
+        }
+
+        img {
+          max-width: 250px;
+
+          @include mq($med-large) {
+            max-width: 100%;
+          }      
+        }
+      }
+    }
+  }
+
+  .community-sponsors {
+    text-align: center;
+    margin-bottom: 4em;
+
+    @include mq($wide) {
+      margin-bottom: 6em;
+    }
+  
+    .community-sponsors__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li {
+        margin-bottom: 1em;
+        padding: 1em 0;
+        list-style-type: none;
+        width: 48%;
+        background-image:
+          url('/images/svg/sponsor-border-t.svg'),
+          url('/images/svg/sponsor-border-r.svg'),
+          url('/images/svg/sponsor-border-b.svg'),
+          url('/images/svg/sponsor-border-l.svg');
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: top, right, bottom, left;
+        background-color: #fff;
+
+        @include mq($small) {
+          width: 30%;
+        }
+
+        @include mq($medium) {
+          width: 24%;
+        }
+
+        @include mq($med-large) {
+          width: 19%;
+        }
+      }
+    }
+  }
+
+  .organising-sponsor {
+    text-align: center;
+
+    .sponsor {
+      background-color: #fff;
+      background-image:
+        url('/images/svg/sponsor-border-t.svg'),
+        url('/images/svg/sponsor-border-r.svg'),
+        url('/images/svg/sponsor-border-b.svg'),
+        url('/images/svg/sponsor-border-l.svg');
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+      background-position: top, right, bottom, left;
+      padding: 3.5em 0;
+
+      @include mq($small) {
+        display: block;
+        max-width: 68%;
+        margin: 0 auto;
+        padding: 4em 0;
+      }
+
+      @include mq($med-large) {
+        max-width: 42%;
+      }
+
+      img {
+        max-width: 250px;
+
+        @include mq($medium) {
+          max-width: 100%;
+        }      
+      }
+    }
+  }
+
+  .footer-mobile {
+    @include mq($med-large) {
+      display: none;
+    }
+  }
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 110;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mq($med-large) {
+
+  }
+  
+  &.modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal__container {
+    background-color: $brand-yellow;
+    padding: 2em;
+    margin: 1em;
+    text-align: center;
+    max-width: 46em;
+    position: relative;
+    display: inline-block;
+    overflow: auto;
+
+    @include mq($large) {
+      padding: 4em;
+    }
+    
+    .speakers-list__img-wrap {
+      display: inline-block;
+      width: 100px;
+      margin-bottom: 1em;
+      background-image: url("/images/svg/speaker-bg.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 10px;
+      text-align: center;   
+    }
+    
+    .speakers-list__img {
+      border-radius: 100px;
+    }
+    
+    .speakers-list__name {
+      @include font-size(18px);
+      line-height: 1em;
+      margin-bottom: 0.4em;
+    }
+    
+    .speakers-list__company {
+      @include font-size(18px);
+      line-height: 1em;
+      margin-bottom: 1em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    
+    p {
+      @include font-size(16px);
+      line-height: 1.6em;
+      margin-bottom: 1.6em;
+      
+      &:last-child {
+        margin-bottom: 0;
+      } 
+           
+      @include mq($large) {
+        @include font-size(18px);
+        line-height: 1.7em;
+      }
+    }
+    
+    .modal-btn {
+      @extend %device-menu-btn-closed-black;
+      width: 70px;
+      height: 65px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 66%;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 120;
+      
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+

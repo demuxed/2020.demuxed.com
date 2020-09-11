@@ -1,0 +1,232 @@
+.page-foot {
+  text-align: center;
+
+  @include mq($med-large) {
+    text-align: left;
+    padding-bottom: 5em;
+  }
+
+  .container {
+    @include mq($med-large) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-image: url("/images/svg/footer-line.svg"), url("/images/svg/footer-line.svg");
+      background-position: top, bottom;
+      background-repeat: no-repeat, no-repeat;
+      background-size: 90%, 90%;
+      padding: 4vw 5vw;
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 1em;
+
+    @include mq($med-large) {
+      display: block;
+    }
+
+    @include mq($wide) {
+      width: 45%;
+    }
+  }
+
+  .page-foot__header {
+    background-image: url("/images/svg/footer-line-mobile.svg"), url("/images/svg/footer-line-mobile.svg");
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
+    padding: 6vw 0;
+    margin-bottom: 3em;
+
+    @include mq($med-large) {
+      background: none;
+      background-image: url("/images/svg/footer-hr.svg");
+      background-position: right;
+      background-repeat: no-repeat;
+      padding: 3vw;
+      margin: 0;
+    }
+
+    .nerds {
+      /*font clamp fallbacks*/
+        font-size: 3.3vw;
+
+        @include mq($medium) {
+          font-size: 2vw;
+        }
+
+        @include mq($med-large) {
+          font-size: 1.6vw;
+        }
+
+        @include mq($xl-large) {
+          font-size: 1.2vw;
+        }
+
+        @include mq($super-wide) {
+          font-size: 1vw;
+        }
+      /*font clamp fallbacks*/
+      font-size: clamp(1.1rem, 1.2vw, 1.6rem)!important;
+
+      @include mq($med-large) {
+        margin-bottom: 0;
+        display: block;
+      }
+
+      span {
+        margin: 0 0.2em 0 0;
+      }
+    }
+  }
+
+  .page-foot__social {
+    @include social-icons;
+    padding-top: 3em;
+    background-image: url("/images/svg/footer-line-mobile.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include mq($med-large) {
+      margin: 0;
+      background: none;
+      display: flex;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 1em;
+
+      @include mq($med-large) {
+        margin: 0 0 0 1em;
+
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+
+    a {
+      border-radius: 90px;
+      &:hover {
+        background-color: #fff; 
+      }
+
+      @include mq($med-large) {
+        height: 30px;
+        width: 30px;
+      }
+
+
+      @include mq($x-large) {
+        height: 50px;
+        width: 50px;
+      }
+
+      @include mq($wide) {
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+
+  .page-foot__nav {
+    text-transform: uppercase;
+    margin-bottom: 3em;
+
+    @include mq($med-large) {
+      margin: 0;
+      padding: 3vw;
+      width: 30%;
+    }
+
+    ul {
+
+    }
+
+    li {
+      list-style-type: none;
+      
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h4 {
+        /*font clamp fallbacks*/
+          font-size: 3.8vw;
+
+          @include mq($small) {
+            font-size: 2.8vw;
+          }
+
+          @include mq($medium) {
+            font-size: 1.8vw;
+          }
+
+          @include mq($med-large) {
+            font-size: 1.6vw;
+          }
+
+          @include mq($large) {
+            font-size: 1.3vw;
+          }
+        /*font clamp fallbacks*/
+
+        margin-bottom:1.1em;
+        font-family: $headline-font;
+        font-size: clamp(1.1rem, 1.2vw, 1.5rem)!important;
+      }
+
+    }
+
+    .nav-item {
+      list-style-type: none;
+      margin-bottom:1.1em;
+
+      @include mq($med-large) {
+
+      }
+
+      a {
+
+      /*font clamp fallbacks*/
+        font-size: 3vw;
+
+        @include mq($small) {
+          font-size: 2vw;
+        }
+
+        @include mq($medium) {
+          font-size: 1.8vw;
+        }
+
+        @include mq($med-large) {
+          font-size: 1.4vw;
+        }
+
+        @include mq($large) {
+          font-size: 1.1vw;
+        }
+      /*font clamp fallbacks*/
+
+        @include transition-all;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-family: $button-font;
+        font-weight: 500;
+        color: #000;
+        
+        font-size: clamp(0.9rem, 1.1vw, 1.2rem)!important;
+        
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

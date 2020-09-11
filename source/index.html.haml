@@ -1,0 +1,435 @@
+---
+title: Demuxed 2020
+---
+
+%section.hero.home-hero
+  %div.container
+    %div.hero__text
+      %h1.hero__heading
+        The Conference for
+        %br.breaker
+        Video Engineers
+      %h1.hero__sub-heading
+        October 27th-29th 2020, The Internet.
+      %div.hero__btn-group
+        = link_to "Buy tickets", "#", :class => "hero__btn buy-tickets"
+        = link_to "Mailing list", "#", :class => "hero__btn mailing-list"
+
+    = image_tag "/images/svg/hero-mobile.svg", :alt => "", :class => "hero__img-mobile"
+    = image_tag "/images/svg/top-bg.svg", :alt => "", :class => "hero__img"
+
+
+%section.why-watch#why-watch
+  %div.container
+    %div.why-text
+      %h2.section-heading
+        Why watch?
+      
+      %ul.why__list
+        %li.no-marketing
+          %h3 No marketing, ever.
+          %p Speakers are selected based on their submission, not how much money their company paid; we will never, ever sell a speaking slot. Attendee information isn't for sale either, and that includes any sponsors.
+        %li.affordable
+          %h3 Affordable.
+          %p We want anyone in the industry to be able to come, which means keeping tickets reasonably priced (thanks largely to our generous sponsors). We also offer free and discounted tickets to students and open source contributors, so please reach out if you're interested.       
+        %li.for-everyone
+          %h3 For everyone in the community.
+          %p
+            Our community is dedicated to providing an inclusive, enjoyable experience for everyone in the video industry. In this pursuit, and in keeping with our love for reasonable standards, we adopted the Ada Initiative's
+            
+            %a{href:"http://confcodeofconduct.com"} code of conduct.
+
+    = image_tag "/images/svg/why-watch-mobile.svg", :alt => "", :class => "why-img__mobile"
+    = image_tag "/images/svg/why-watch.svg", :alt => "", :class => "why-img"
+
+%div.black-background
+  %section.speakers#speakers
+    %div.container
+      %h2.section-heading
+        Our Speakers
+
+      %ul.speakers-list
+        %li.speakers-list__card#scott-kellicker
+          %div.speakers-list__img-wrap
+            = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
+          %div.speakers-list__text
+            %h3.speakers-list__name Alexandria Shealy
+            %h4.speakers-list__company Twitch
+            %p.speakers-list__talk-title The “technical” in technical project management.
+            %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+
+        %li.speakers-list__card
+          %div.speakers-list__img-wrap
+            = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
+          %div.speakers-list__text
+            %h3.speakers-list__name Tarek Amara Amara Amara Amara
+            %h4.speakers-list__company Twitch
+            %p.speakers-list__talk-title How to build a high quality 'live' HD VP9 Encoder
+            %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+
+        %li.speakers-list__card
+          %div.speakers-list__img-wrap
+            = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
+          %div.speakers-list__text
+            %h3.speakers-list__name Jean-Baptiste Kempf
+            %h4.speakers-list__company Videolan
+            %p.speakers-list__talk-title "Time Machine" - how to reconstruct perceptually, during playback, part of the detail lost in encoding
+            %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+
+        %li.speakers-list__card
+          %div.speakers-list__img-wrap
+            = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
+          %div.speakers-list__text
+            %h3.speakers-list__name Lahiru Dayananda
+            %h4.speakers-list__company Brightcove
+            %p.speakers-list__talk-title How to be data-driven when you aren’t Netflix (or even if you are)
+            %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+
+        %li.speakers-list__card
+          %div.speakers-list__img-wrap
+            = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
+          %div.speakers-list__text
+            %h3.speakers-list__name Lahiru Dayananda
+            %h4.speakers-list__company Brightcove
+            %p.speakers-list__talk-title How to be data-driven when you aren’t Netflix (or even if you are)
+            %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+
+        %li.speakers-list__card
+          %div.speakers-list__img-wrap
+            = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
+          %div.speakers-list__text
+            %h3.speakers-list__name Lahiru Dayananda
+            %h4.speakers-list__company Brightcove
+            %p.speakers-list__talk-title How to be data-driven when you aren’t Netflix (or even if you are)
+            %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+
+  %section.schedule#schedule
+    %div.container
+      %h2.section-heading
+        The Schedule
+        %span
+          October 27th, 28th, & 29th 2020
+
+      %div.days
+        = link_to "Tuesday 27th", "", :class => "schedule__day-switcher"
+
+        %ul.day.tuesday
+          %li
+            %h3.date Tuesday 27th
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.break
+            %h4.break__type
+              15min break
+            = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.break
+            %h4.break__type
+              Lunch break
+            = image_tag("/images/svg/lunch.svg", alt: "", class: "break__img")
+
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+        %ul.day.wednesday
+          %li
+            %h3.date Wednesday 28th
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.break
+            %h4.break__type
+              15min break
+            = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.break
+            %h4.break__type
+              Lunch break
+            = image_tag("/images/svg/lunch.svg", alt: "", class: "break__img")
+
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+        %ul.day.thursday
+          %li
+            %h3.date Thursday 29th
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.break
+            %h4.break__type
+              15min break
+            = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.break
+            %h4.break__type
+              Lunch break
+            = image_tag("/images/svg/lunch.svg", alt: "", class: "break__img")
+
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+          %li.talk
+            %div.talk__img
+              = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
+            %div.talk__text
+              %h4.talk__time
+                9am - 9.45am
+              %h4.talk__name
+                Konstantin Wilms
+              %a.talk__desc{href:"#popup-scott-kellicker"}
+                Large-Scale Media Archive Migration to the Cloud
+
+
+%section.about-us#about-us
+  %div.container
+    %div.about-us__img-container1
+      = image_tag("/images/about-us-pic1.png", alt: "", class: "about-us__img1")
+
+    %div.about-text
+      %h2.section-heading
+        About us
+      %p
+        Demuxed is simply engineers talking about video technology. After years of chatting about video at the SF Video Technology Meetup, we decided it was time for an engineer-first event with quality technical talks about video. Our focus has traditionally been on content delivered over the web, but topics cover anything from encoding to playback and more!
+      %p
+        Most of the organization and work behind the scenes is done by folks from Mux (Demuxed came first ☝️) but none of this would be possible without amazing people from the meetup.
+      %p
+        Every year we get a group together that's kind enough to do things like schedule planning, help brainstorm cool swag, and, most importantly, argue heatedly over which talk submissions should make the final cut.
+
+    %div.about-us__img-container2
+      = image_tag("/images/about-us-pic2.png", alt: "", class: "about-us__img2")
+
+
+
+%section.sponsors#sponsors
+  %div.container
+    %h2.section-heading
+      Our Sponsors
+
+    %ul.main-sponsors
+      %li
+        = image_tag("/images/svg/sponsor-person-l.svg", alt: "", class: "sponsor-person-l")
+
+        %h4.sponsor-title
+          Day 1
+          %span Sponsor
+
+        %div.sponsor
+          = image_tag("/images/svg/sponsors/google.svg", alt: "", class: "")
+
+      %li
+        %h4.sponsor-title
+          Day 2
+          %span Sponsor
+
+        %div.sponsor
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+
+      %li
+        = image_tag("/images/svg/sponsor-person-r.svg", alt: "", class: "sponsor-person-r")
+        %h4.sponsor-title
+          Day 3
+          %span Sponsor
+
+        %div.sponsor
+          = image_tag("/images/svg/sponsors/fastly.svg", alt: "", class: "")
+
+    %div.community-sponsors
+      %h3.sponsor-title
+        Community
+        %span sponsors
+      %ul.community-sponsors__list
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %li
+          = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+
+    %div.organising-sponsor
+      %h3.sponsor-title
+        Organized
+        %span By
+
+      %div.sponsor
+        = image_tag("/images/svg/sponsors/mux.svg", alt: "", class: "") 
+
+  = image_tag("/images/svg/footer-mobile.svg", alt: "", class: "footer-mobile")
+

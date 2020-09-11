@@ -1,0 +1,20 @@
+%header.page-head
+  %div.container
+    %a.logo{:href => "/index.html"}
+      = image_tag "/images/svg/logo-white.svg", :alt => "Demuxed 2020", :class => ""
+
+    %a#js-menu-btn.menu-btn(href="#")
+    %nav#js-main-nav.page-head__nav
+      %ul
+        %li.nav-item
+          = link_to "Why watch", "#why-watch"
+        %li.nav-item
+          = link_to "Speakers", "#speakers"
+        %li.nav-item
+          = link_to "Schedule", "#schedule"
+        %li.nav-item
+          = link_to "About us", "#about-us"
+        %li.nav-item
+          = link_to "Sponsors", "#sponsors"
+        %li.nav-item
+          = link_to "Buy tickets", "#"
