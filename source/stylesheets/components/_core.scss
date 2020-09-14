@@ -1258,8 +1258,6 @@ h1, h2, h3, h4, h5 {
         }
 
         img {
-          max-width: 350px;
-
           @include mq($med-large) {
             max-width: 100%;
           }      
