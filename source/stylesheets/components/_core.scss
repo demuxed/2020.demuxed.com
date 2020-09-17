@@ -1547,4 +1547,19 @@ h1, h2, h3, h4, h5 {
       margin-top: 0.3em;
     }
   }
+
+  a {
+    background-color: #fff;
+    padding: 0 0.4em;
+    color: #000;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
