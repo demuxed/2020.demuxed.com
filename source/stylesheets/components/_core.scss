@@ -1458,4 +1458,76 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+.text-page {
+  @include mq($small) {
+    margin: 0 auto 4em;
+    max-width: 80%;
+  }
 
+  @include mq($large) {
+    margin-bottom: 6em;
+    max-width: 60%;
+  }
+
+  @include mq($wide) {
+    max-width: 50%;
+  }
+
+  section {
+    margin-top: 4em;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: $headline-font;
+    text-transform: uppercase;
+
+    .breaker {
+      display: none;
+
+      @include mq($small) {
+        display: block;
+      }
+    }
+
+    /*font clamp fallbacks*/
+    font-size: 6.5vw;
+
+    @include mq($small) {
+      font-size: 4.5vw;
+    }
+
+    @include mq($med-large) {
+      font-size: 5vw;
+    }
+    /*font clamp fallbacks*/
+
+     font-size: clamp(2rem, 5vw, 6rem)!important;
+     font-weight: 900;
+     margin-bottom: 0.3em;
+     line-height: 1.11;
+  }
+
+  h2 {
+    text-align: left;
+    &:after {
+      background-position: left;
+    }
+  }
+
+  h3 {
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    padding: 1em 0;
+  }
+
+  ul {
+    margin-left: 1em;
+
+    li {
+      margin-top: 0.3em;
+    }
+  }
+}
