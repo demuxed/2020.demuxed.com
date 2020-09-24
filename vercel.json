@@ -1,0 +1,5 @@
+{
+    "redirects" : [
+        {"source" : "/submit", "destination" : "https://tickets.demuxed.com", "permanent": false}
+    ]
+}
