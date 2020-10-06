@@ -1,0 +1,14 @@
+{
+  "day_1": [
+    {
+      "start": "08:30",
+      "end": "09:45",
+      "title": "Opening Remarks"
+    },
+    {
+      "start": "09:45",
+      "end": "10:30",
+      "talk": "talk-title"
+    }
+  ]
+}

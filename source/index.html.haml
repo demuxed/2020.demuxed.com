@@ -42,66 +42,29 @@ title: Demuxed 2020
     = image_tag "/images/svg/why-watch-mobile.svg", :alt => "", :class => "why-img__mobile"
     = image_tag "/images/svg/why-watch.svg", :alt => "", :class => "why-img"
 
--# %div.black-background
--#   %section.speakers#speakers
--#     %div.container
--#       %h2.section-heading
--#         Our Speakers
+%div.black-background
+  %section.speakers#speakers
+    %div.container
+      %h2.section-heading
+        Our Speakers
 
--#       %ul.speakers-list
--#         %li.speakers-list__card#scott-kellicker
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Alexandria Shealy
--#             %h4.speakers-list__company Twitch
--#             %p.speakers-list__talk-title The “technical” in technical project management.
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+      %ul.speakers-list
 
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Tarek Amara Amara Amara Amara
--#             %h4.speakers-list__company Twitch
--#             %p.speakers-list__talk-title How to build a high quality 'live' HD VP9 Encoder
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
-
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Jean-Baptiste Kempf
--#             %h4.speakers-list__company Videolan
--#             %p.speakers-list__talk-title "Time Machine" - how to reconstruct perceptually, during playback, part of the detail lost in encoding
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
-
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Lahiru Dayananda
--#             %h4.speakers-list__company Brightcove
--#             %p.speakers-list__talk-title How to be data-driven when you aren’t Netflix (or even if you are)
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
-
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Lahiru Dayananda
--#             %h4.speakers-list__company Brightcove
--#             %p.speakers-list__talk-title How to be data-driven when you aren’t Netflix (or even if you are)
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
-
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Lahiru Dayananda
--#             %h4.speakers-list__company Brightcove
--#             %p.speakers-list__talk-title How to be data-driven when you aren’t Netflix (or even if you are)
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+        - data.speakers.each do |speaker|
+          %li.speakers-list__card
+            %div.speakers-list__img-wrap
+              - if speaker.custom_photo_url
+                = image_tag(speaker.custom_photo_url, alt: "", class: "speakers-list__img")
+              - else
+                = image_tag("https://demuxed-speakers-2020.imgix.net/#{speaker.name.downcase.split(' ').join('-')}.jpg?w=170&h=240&fit=facearea&facepad=3&auto=format,compress&q=70", alt: "", class: "speakers-list__img")
+            %div.speakers-list__text
+              %h3.speakers-list__name
+                = speaker.name
+              %h4.speakers-list__company
+                = speaker.company
+              %p.speakers-list__talk-title
+                = data.talks[speaker.talk].title
+              -# %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
 
 -#   %section.schedule#schedule
 -#     %div.container
@@ -322,7 +285,6 @@ title: Demuxed 2020
 -#                 Konstantin Wilms
 -#               %a.talk__desc{href:"#popup-scott-kellicker"}
 -#                 Large-Scale Media Archive Migration to the Cloud
-
 
 %section.about-us#about-us
   %div.container
