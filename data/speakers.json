@@ -1,0 +1,143 @@
+[
+  {
+    "name": "Alexandria Shealy",
+    "company": "Disney",
+    "talk": "growing-the-next-generation-of-us-how-to-make-sure-this-industry-stays-in-good-hands"
+  },
+  {
+    "name": "Boy van Dijk",
+    "company": "Unified Streaming",
+    "talk": "dont-let-latency-ruin-your-longtail-an-introduction-to-dref-mp4-caching"
+  },
+  {
+    "name": "Christian Feldmann",
+    "company": "Bitmovin",
+    "talk": "the-hypothetical-reference-decoder-or-vbvbitrate-is-not-bitrate"
+  },
+  {
+    "name": "Denise Noyes",
+    "company": "Facebook",
+    "talk": "providing-better-video-experiences-for-the-next-billion-users-what-facebook-learned-from-focusing-on-improving-video-playback-in-india",
+    "custom_photo_url": "https://demuxed-speakers-2020.imgix.net/denise-noyes.jpg?w=170&h=240&fp-x=0.45&fp-y=0.51&fit=crop&fp-z=1.55&crop=focalpoint&auto=format,compress&q=70"
+  },
+  {
+    "name": "Evan Farina",
+    "company": "LinkedIn",
+    "talk": "be-vewy-vewy-quiet-were-hunting-bugs"
+  },
+  {
+    "name": "Frank Paolino",
+    "company": "Akamai",
+    "talk": "greed-lies-and-deceit--curious-stories-of-player-misbehavior",
+    "custom_photo_url": "https://demuxed-speakers-2020.imgix.net/frank-paolino.jpg?w=170&h=240&fp-x=0.51&fp-y=0.9&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70"
+  },
+  {
+    "name": "Jeremy Brown",
+    "company": "Optus",
+    "talk": "four-approaches-to-building-trick-view-scrubbing",
+    "custom_photo_url": "https://demuxed-speakers-2020.imgix.net/jeremy-brown.jpg?w=170&h=240&fp-x=0.51&fp-y=0.9&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70"
+  },
+  {
+    "name": "Jim Hall",
+    "company": "Fastly",
+    "talk": "cdn-logs-not-just-for-breakfast-anymore",
+    "custom_photo_url": "https://demuxed-speakers-2020.imgix.net/jim-hall.jpg?w=170&h=240&fp-x=0.5&fp-y=0.9&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70"
+  },
+  {
+    "name": "Jun Heider",
+    "company": "RealEyes",
+    "talk": "hey-viddy-hey-viddy-yay-speak-description-to-me",
+    "custom_photo_url": "https://demuxed-speakers-2020.imgix.net/jun-heider.jpg?w=170&h=240&fp-x=0.5&fp-y=0.9&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70"
+  },
+  {
+    "name": "Kevin Fuhrman",
+    "company": "Disney",
+    "talk": "growing-the-next-generation-of-us-how-to-make-sure-this-industry-stays-in-good-hands",
+    "custom_photo_url": "https://demuxed-speakers-2020.imgix.net/kevin-fuhrman.jpg?w=170&h=240&fp-x=0.47&fp-y=0.45&fit=crop&fp-z=1.05&crop=focalpoint&auto=format,compress&q=70"
+  },
+  {
+    "name": "Kirill Pugin",
+    "company": "Facebook",
+    "talk": "live-video-streaming-as-tail-f"
+  },
+  {
+    "name": "Lucas Pardue",
+    "company": "Cloudflare",
+    "talk": "the-quicematic-universe-season-20202021-preview"
+  },
+  {
+    "name": "Mariana Afonso",
+    "company": "Netflix",
+    "talk": "delivering-better-video-encodes-for-legacy-devices"
+  },
+  {
+    "name": "Michael Dale",
+    "company": "Ellation",
+    "talk": "playback-on-edge--or-how-i-learned-to-stop-worrying-and-love-serverless"
+  },
+  {
+    "name": "Michael Rappaport",
+    "company": "Disney",
+    "talk": "moving-live-video-quality-control-from-the-broadcast-facility-to-the-living-room"
+  },
+  {
+    "name": "Michelle Munson",
+    "company": "Eluvio",
+    "talk": "low-latency-live-from-a-different-vantage-point"
+  },
+  {
+    "name": "Nigel Harniman",
+    "company": "M2A Media",
+    "talk": "dynamic-content-insertion-into-live-streams-across-the-3-main-streaming-formats--yes-that-includes-mss--single-period-dash"
+  },
+  {
+    "name": "Nitin Garg",
+    "company": "Facebook",
+    "talk": "live-video-streaming-as-tail-f"
+  },
+  {
+    "name": "Roderick Hodgson",
+    "company": "Simon Says",
+    "talk": "editing-video-simply-by-editing-text-in-the-browser-a-meta-story"
+  },
+  {
+    "name": "Sam Bhattacharyya",
+    "company": "Vectorly",
+    "talk": "video-vectorization"
+  },
+  {
+    "name": "Scott White",
+    "company": "Tonal",
+    "talk": "video-personalization-for-strength-training"
+  },
+  {
+    "name": "Sean DuBois",
+    "company": "Amazon",
+    "talk": "webrtc-does-what-learn-how-robotics-subsecond-broadcast-and-game-streaming-is-powered"
+  },
+  {
+    "name": "Steve Heffernan",
+    "company": "Mux",
+    "talk": "its-time-to-rebuild-your-player-with-web-components"
+  },
+  {
+    "name": "Steve Robertson",
+    "company": "YouTube",
+    "talk": "handling-err-handling-err-handling-errors-in-video-playback"
+  },
+  {
+    "name": "Vanessa Pyne",
+    "company": "Daily.co",
+    "talk": "and-now-presenting-what-no-one-asked-for-how-to-live-stream-a-laserdisc"
+  },
+  {
+    "name": "Vibhoothi",
+    "company": "Videolan / Xiph",
+    "talk": "achieving-faster-av1-encoding-on-arm-devices-using-rav1e"
+  },
+  {
+    "name": "Zoe Liu",
+    "company": "Visionular",
+    "talk": "decoder-complexity-aware-av1-encoding-optimization"
+  }
+]
