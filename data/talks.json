@@ -1,52 +1,24 @@
 {
-  "be-vewy-vewy-quiet-were-hunting-bugs": {
-    "title": "Be vewy vewy quiet. We're hunting bugs",
+  "growing-the-next-generation-of-us-how-to-make-sure-this-industry-stays-in-good-hands": {
+    "title": "Growing the Next Generation of us: How to make sure this industry stays in good hands",
     "description": "Coming Soon",
     "speakers": [
-      "Evan Farina"
-    ]
-  },
-  "dynamic-content-insertion-into-live-streams-across-the-3-main-streaming-formats--yes-that-includes-mss--single-period-dash": {
-    "title": "Dynamic content insertion into live streams across the 3 main streaming formats - Yes, that includes MSS & single Period DASH!!",
-    "description": "Coming Soon",
-    "speakers": [
-      "Nigel Harniman"
+      "Alexandria Shealy",
+      "Kevin Fuhrman"
     ]
   },
   "dont-let-latency-ruin-your-longtail-an-introduction-to-dref-mp4-caching": {
-    "title": "Don't let latency ruin your longtail: an introduction to 'dref MP4' caching",
+    "title": "Don't let latency ruin your longtail: an introduction to \"dref MP4\" caching",
     "description": "Coming Soon",
     "speakers": [
       "Boy van Dijk"
     ]
   },
-  "handling-errhandling-errhandling-errors-in-video-playback": {
-    "title": "Handling err...Handling err...Handling errors in video playback",
+  "the-hypothetical-reference-decoder-or-vbvbitrate-is-not-bitrate": {
+    "title": "The Hypothetical Reference Decoder. Or: vbv-bitrate is not bitrate",
     "description": "Coming Soon",
     "speakers": [
-      "Steve Robertson"
-    ]
-  },
-  "achieving-faster-av1-encoding-on-arm-devices-using-rav1e": {
-    "title": "Achieving Faster AV1 Encoding on ARM Devices using rav1e",
-    "description": "Coming Soon",
-    "speakers": [
-      "Vibhoothi"
-    ]
-  },
-  "cdn-logs-not-just-for-breakfast-anymore": {
-    "title": "CDN Logs: Not just for breakfast anymore",
-    "description": "Coming Soon",
-    "speakers": [
-      "Jim Hall"
-    ]
-  },
-  "live-video-streaming-as-tail-f": {
-    "title": "Live Video Streaming as \"tail -f\"",
-    "description": "Coming Soon",
-    "speakers": [
-      "Nitin Garg",
-      "Kirill Pugin"
+      "Christian Feldmann"
     ]
   },
   "providing-better-video-experiences-for-the-next-billion-users-what-facebook-learned-from-focusing-on-improving-video-playback-in-india": {
@@ -56,18 +28,11 @@
       "Denise Noyes"
     ]
   },
-  "the-quicematic-universe-season-20202021-preview": {
-    "title": "The QUIC-ematic universe season 2020-2021 preview",
+  "be-vewy-vewy-quiet-were-hunting-bugs": {
+    "title": "Be vewy vewy quiet. We're hunting bugs",
     "description": "Coming Soon",
     "speakers": [
-      "Lucas Pardue"
-    ]
-  },
-  "delivering-better-video-encodes-for-legacy-devices": {
-    "title": "Delivering better video encodes for legacy devices",
-    "description": "Coming Soon",
-    "speakers": [
-      "Mariana Afonso"
+      "Evan Farina"
     ]
   },
   "greed-lies-and-deceit--curious-stories-of-player-misbehavior": {
@@ -77,19 +42,11 @@
       "Frank Paolino"
     ]
   },
-  "growing-the-next-generation-of-us-how-to-make-sure-this-industry-stays-in-good-hands": {
-    "title": "Growing the Next Generation of us: How to make sure this industry stays in good hands",
+  "cdn-logs-not-just-for-breakfast-anymore": {
+    "title": "CDN Logs: Not just for breakfast anymore",
     "description": "Coming Soon",
     "speakers": [
-      "Alexandria Shealy",
-      "Kevin Fuhrman"
-    ]
-  },
-  "the-hypothetical-reference-decoder-or-vbvbitrate-is-not-bitrate": {
-    "title": "The Hypothetical Reference Decoder. Or: vbv-bitrate is not bitrate",
-    "description": "Coming Soon",
-    "speakers": [
-      "Christian Feldmann"
+      "Jim Hall"
     ]
   },
   "four-approaches-to-building-trick-view-scrubbing": {
@@ -106,6 +63,28 @@
       "Jun Heider"
     ]
   },
+  "live-video-streaming-as-tail-f": {
+    "title": "Live Video Streaming as \"tail -f\"",
+    "description": "Coming Soon",
+    "speakers": [
+      "Nitin Garg",
+      "Kirill Pugin"
+    ]
+  },
+  "the-quicematic-universe-season-20202021-preview": {
+    "title": "The QUIC-ematic universe season 2020-2021 preview",
+    "description": "Coming Soon",
+    "speakers": [
+      "Lucas Pardue"
+    ]
+  },
+  "delivering-better-video-encodes-for-legacy-devices": {
+    "title": "Delivering better video encodes for legacy devices",
+    "description": "Coming Soon",
+    "speakers": [
+      "Mariana Afonso"
+    ]
+  },
   "playback-on-edge--or-how-i-learned-to-stop-worrying-and-love-serverless": {
     "title": "Playback on Edge - Or how I learned to stop worrying and love serverless.",
     "description": "Coming Soon",
@@ -120,11 +99,18 @@
       "Michael Rappaport"
     ]
   },
-  "lll-from-a-different-vantage-point": {
-    "title": "LLL from A Different Vantage Point",
+  "low-latency-live-from-a-different-vantage-point": {
+    "title": "Low Latency Live from a Different Vantage Point",
     "description": "Coming Soon",
     "speakers": [
       "Michelle Munson"
+    ]
+  },
+  "dynamic-content-insertion-into-live-streams-across-the-3-main-streaming-formats--yes-that-includes-mss--single-period-dash": {
+    "title": "Dynamic content insertion into live streams across the 3 main streaming formats - Yes, that includes MSS & single Period DASH!",
+    "description": "Coming Soon",
+    "speakers": [
+      "Nigel Harniman"
     ]
   },
   "editing-video-simply-by-editing-text-in-the-browser-a-meta-story": {
@@ -162,11 +148,25 @@
       "Steve Heffernan"
     ]
   },
+  "handling-err-handling-err-handling-errors-in-video-playback": {
+    "title": "Handling err... Handling err... Handling errors in video playback",
+    "description": "Coming Soon",
+    "speakers": [
+      "Steve Robertson"
+    ]
+  },
   "and-now-presenting-what-no-one-asked-for-how-to-live-stream-a-laserdisc": {
     "title": "And now presenting what no one asked for: How to live stream a laserdisc",
     "description": "Coming Soon",
     "speakers": [
       "Vanessa Pyne"
+    ]
+  },
+  "achieving-faster-av1-encoding-on-arm-devices-using-rav1e": {
+    "title": "Achieving Faster AV1 Encoding on ARM Devices using rav1e",
+    "description": "Coming Soon",
+    "speakers": [
+      "Vibhoothi"
     ]
   },
   "decoder-complexity-aware-av1-encoding-optimization": {
