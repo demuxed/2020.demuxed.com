@@ -1,9 +1,30 @@
 {
+  "be-vewy-vewy-quiet-were-hunting-bugs": {
+    "title": "Be vewy vewy quiet. We're hunting bugs",
+    "description": "Coming Soon",
+    "speakers": [
+      "Evan Farina"
+    ]
+  },
   "dynamic-content-insertion-into-live-streams-across-the-3-main-streaming-formats--yes-that-includes-mss--single-period-dash": {
     "title": "Dynamic content insertion into live streams across the 3 main streaming formats - Yes, that includes MSS & single Period DASH!!",
     "description": "Coming Soon",
     "speakers": [
       "Nigel Harniman"
+    ]
+  },
+  "dont-let-latency-ruin-your-longtail-an-introduction-to-dref-mp4-caching": {
+    "title": "Don't let latency ruin your longtail: an introduction to 'dref MP4' caching",
+    "description": "Coming Soon",
+    "speakers": [
+      "Boy van Dijk"
+    ]
+  },
+  "handling-errhandling-errhandling-errors-in-video-playback": {
+    "title": "Handling err...Handling err...Handling errors in video playback",
+    "description": "Coming Soon",
+    "speakers": [
+      "Steve Robertson"
     ]
   },
   "achieving-faster-av1-encoding-on-arm-devices-using-rav1e": {
@@ -42,6 +63,20 @@
       "Lucas Pardue"
     ]
   },
+  "delivering-better-video-encodes-for-legacy-devices": {
+    "title": "Delivering better video encodes for legacy devices",
+    "description": "Coming Soon",
+    "speakers": [
+      "Mariana Afonso"
+    ]
+  },
+  "greed-lies-and-deceit--curious-stories-of-player-misbehavior": {
+    "title": "Greed, Lies and Deceit – Curious Stories of Player Misbehavior",
+    "description": "Coming Soon",
+    "speakers": [
+      "Frank Paolino"
+    ]
+  },
   "growing-the-next-generation-of-us-how-to-make-sure-this-industry-stays-in-good-hands": {
     "title": "Growing the Next Generation of us: How to make sure this industry stays in good hands",
     "description": "Coming Soon",
@@ -72,7 +107,7 @@
     ]
   },
   "playback-on-edge--or-how-i-learned-to-stop-worrying-and-love-serverless": {
-    "title": "Playback on Edge - Or how I learned to stop worrying and love serverless",
+    "title": "Playback on Edge - Or how I learned to stop worrying and love serverless.",
     "description": "Coming Soon",
     "speakers": [
       "Michael Dale"
