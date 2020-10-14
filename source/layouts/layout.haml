@@ -24,7 +24,9 @@
       %div.main-content
         = yield
 
-      = partial(:talks)
+      - data.talks.each do |talk|
+        = partial('_talks', locals: {talk: talk, speakers: data.speakers})
+      
       = partial(:footer)
 
     = javascript_include_tag(:mobilemenu)

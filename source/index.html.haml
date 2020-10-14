@@ -64,7 +64,7 @@ title: Demuxed 2020
                 = speaker.company
               %p.speakers-list__talk-title
                 = data.talks[speaker.talk].title
-              -# %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+              %a.speakers-list__talk-overview{href:"#popup-" + speaker.talk} Talk overview
 
 -#   %section.schedule#schedule
 -#     %div.container
@@ -404,4 +404,3 @@ title: Demuxed 2020
         = link_to(image_tag("/images/svg/sponsors/mux.svg", alt: "", class: ""), "https://mux.com", target: "_blank", rel: "noopener noreferrer")
 
   = image_tag("/images/svg/footer-mobile.svg", alt: "", class: "footer-mobile")
-

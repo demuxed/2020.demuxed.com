@@ -1375,6 +1375,23 @@ h1, h2, h3, h4, h5 {
 
   }
   
+  .speaker_details {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .talk-title {
+    padding-bottom: 0.5em;
+  }
+
+  .speakers {
+    display: flex;
+    justify-content: space-around;
+  }
+
   &.modal:target {
     visibility: visible;
     opacity: 1;
