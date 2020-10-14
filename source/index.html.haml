@@ -64,7 +64,7 @@ title: Demuxed 2020
                 = speaker.company
               %p.speakers-list__talk-title
                 = data.talks[speaker.talk].title
-              %a.speakers-list__talk-overview{href:"#popup-" + speaker.talk} Talk overview
+              %a.speakers-list__talk-overview{onclick: "showModal(event, 'popup-#{speaker.talk}');"} Talk overview
 
 -#   %section.schedule#schedule
 -#     %div.container

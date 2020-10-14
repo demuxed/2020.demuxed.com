@@ -3,7 +3,7 @@
 
 %div.modal{id: 'popup-' + id}
   %div.modal__container{role: "dialog", aria: {modal: true, labelledby: "#{id}-title"}}
-    %a.modal-btn{href: "#" + id}
+    %a.modal-btn{onclick: 'closeModal(event, this);'}
     .speakers
       - details.speakers.each do |speaker_name|
         - speaker = speakers.find{ |s| s.name == speaker_name if s.name }

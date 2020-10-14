@@ -1392,10 +1392,10 @@ h1, h2, h3, h4, h5 {
     justify-content: space-around;
   }
 
-  &.modal:target {
-    visibility: visible;
-    opacity: 1;
-  }
+  // &.modal:target {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
   
   .modal__container {
     background-color: $brand-yellow;
