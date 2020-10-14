@@ -1,8 +1,8 @@
 - id = talk[0]
 - details = talk[1]
 
-%section.modal{id: 'popup-' + id}
-  %div.modal__container.popup
+%div.modal{id: 'popup-' + id}
+  %div.modal__container{role: "dialog", aria: {modal: true, labelledby: "#{id}-title"}}
     %a.modal-btn{href: "#" + id}
     .speakers
       - details.speakers.each do |speaker_name|

@@ -29,7 +29,8 @@
       
       = partial(:footer)
 
-    = javascript_include_tag(:mobilemenu)
+    = javascript_include_tag :mobilemenu
+    = javascript_include_tag :all
 
     - unless current_page.data.include_javascripts.nil?
       - current_page.data.include_javascripts.each do |js|
