@@ -66,225 +66,36 @@ title: Demuxed 2020
                 = data.talks[speaker.talk].title
               %a.speakers-list__talk-overview{onclick: "showTalkModal(event, 'popup-#{speaker.talk}');"} Talk overview
 
--#   %section.schedule#schedule
--#     %div.container
--#       %h2.section-heading
--#         The Schedule
--#         %span
--#           October 27th, 28th, & 29th 2020
+  %section.schedule#schedule
+    %div.container
+      %h2.section-heading
+        The Schedule
+        %span
+          October 27th, 28th, & 29th 2020
 
--#       %div.days
--#         = link_to "Tuesday 27th", "", :class => "schedule__day-switcher"
+      %div.days
+        = link_to "Tuesday 27th", "", :class => "schedule__day-switcher"
 
--#         %ul.day.tuesday
--#           %li
--#             %h3.date Tuesday 27th
+        %ul.day.tuesday
+          %li
+            %h3.date Tuesday 27th
 
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
+          - data.schedule['tuesday'].each do | session |
+            = partial 'partials/schedule-entry', locals: { session: session }
 
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
+        %ul.day.wednesday
+          %li
+            %h3.date Wednesday 28th
 
--#           %li.break
--#             %h4.break__type
--#               15min break
--#             = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
+          - data.schedule['wednesday'].each do | session |
+            = partial 'partials/schedule-entry', locals: { session: session }
 
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
+        %ul.day.thursday
+          %li
+            %h3.date Thursday 29th
 
--#           %li.break
--#             %h4.break__type
--#               Lunch break
--#             = image_tag("/images/svg/lunch.svg", alt: "", class: "break__img")
-
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#         %ul.day.wednesday
--#           %li
--#             %h3.date Wednesday 28th
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               15min break
--#             = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               Lunch break
--#             = image_tag("/images/svg/lunch.svg", alt: "", class: "break__img")
-
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#         %ul.day.thursday
--#           %li
--#             %h3.date Thursday 29th
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               15min break
--#             = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               Lunch break
--#             = image_tag("/images/svg/lunch.svg", alt: "", class: "break__img")
-
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
+          - data.schedule['thursday'].each do | session |
+            = partial 'partials/schedule-entry', locals: { session: session }
 
 %section.about-us#about-us
   %div.container

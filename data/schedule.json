@@ -1,14 +1,198 @@
 {
-  "day_1": [
+  "tuesday": [
     {
-      "start": "08:30",
-      "end": "09:45",
+      "start": " 9:00",
+      "end": " 9:15",
       "title": "Opening Remarks"
     },
     {
-      "start": "09:45",
-      "end": "10:30",
-      "talk": "talk-title"
+      "start": " 9:15",
+      "end": " 9:40",
+      "talk": "delivering-better-video-encodes-for-legacy-devices"
+    },
+    {
+      "start": " 9:40",
+      "end": " 9:55",
+      "talk": "the-quicematic-universe-season-20202021-preview"
+    },
+    {
+      "start": " 9:55",
+      "end": "10:10",
+      "title": "Break"
+    },
+    {
+      "start": "10:10",
+      "end": "10:25",
+      "talk": "video-vectorization"
+    },
+    {
+      "start": "10:25",
+      "end": "10:50",
+      "talk": "playback-on-edge--or-how-i-learned-to-stop-worrying-and-love-serverless"
+    },
+    {
+      "start": "10:50",
+      "end": "11:05",
+      "talk": "how-big-buck-bunny-helped-track-down-bugs"
+    },
+    {
+      "start": "11:05",
+      "end": "11:20",
+      "title": "Break"
+    },
+    {
+      "start": "11:20",
+      "end": "11:45",
+      "talk": "video-personalization-for-strength-training"
+    },
+    {
+      "start": "11:45",
+      "end": "12:10",
+      "talk": "greed-lies-and-deceit--curious-stories-of-player-misbehavior"
+    },
+    {
+      "start": "12:10",
+      "end": "12:25",
+      "title": "Break"
+    },
+    {
+      "start": "12:25",
+      "end": "12:50",
+      "talk": "providing-better-video-experiences-for-the-next-billion-users-what-facebook-learned-from-focusing-on-improving-video-playback-in-india"
+    },
+    {
+      "start": "12:50",
+      "end": "13:15",
+      "talk": "av1-and-arm"
+    }
+  ],
+  "wednesday": [
+    {
+      "start": " 9:00",
+      "end": " 9:15",
+      "talk": "and-now-presenting-what-no-one-asked-for-how-to-live-stream-a-laserdisc"
+    },
+    {
+      "start": " 9:15",
+      "end": " 9:40",
+      "talk": "dynamic-content-insertion-into-live-streams-across-the-3-main-streaming-formats--yes-that-includes-mss--single-period-dash"
+    },
+    {
+      "start": " 9:40",
+      "end": " 9:55",
+      "talk": "cdn-logs-not-just-for-breakfast-anymore"
+    },
+    {
+      "start": " 9:55",
+      "end": "10:10",
+      "title": "Break"
+    },
+    {
+      "start": "10:10",
+      "end": "10:35",
+      "talk": "growing-the-next-generation-of-us-how-to-make-sure-this-industry-stays-in-good-hands"
+    },
+    {
+      "start": "10:35",
+      "end": "11:00",
+      "talk": "its-time-to-rebuild-your-player-with-web-components"
+    },
+    {
+      "start": "11:00",
+      "end": "11:15",
+      "title": "Break"
+    },
+    {
+      "start": "11:15",
+      "end": "11:40",
+      "talk": "live-video-streaming-as-tail-f"
+    },
+    {
+      "start": "11:40",
+      "end": "12:05",
+      "talk": "the-hypothetical-reference-decoder-or-vbvbitrate-is-not-bitrate"
+    },
+    {
+      "start": "12:05",
+      "end": "12:20",
+      "title": "Break"
+    },
+    {
+      "start": "12:20",
+      "end": "12:35",
+      "talk": "moving-live-video-quality-control-from-the-broadcast-facility-to-the-living-room"
+    },
+    {
+      "start": "12:35",
+      "end": "13:00",
+      "talk": "webrtc-does-what-learn-how-robotics-subsecond-broadcast-and-game-streaming-is-powered"
+    },
+    {
+      "start": "13:00",
+      "end": "13:15",
+      "talk": "editing-video-simply-by-editing-text-in-the-browser-a-meta-story"
+    }
+  ],
+  "thursday": [
+    {
+      "start": " 9:00",
+      "end": " 9:15",
+      "talk": "hey-viddy-hey-viddy-yay-speak-description-to-me"
+    },
+    {
+      "start": " 9:15",
+      "end": " 9:40",
+      "talk": "low-latency-live-from-a-different-vantage-point"
+    },
+    {
+      "start": " 9:40",
+      "end": " 9:55",
+      "talk": "building-an-8k-encoder--live-streaming-platform-using-off-the-shelf-stuff-in--10-minutes"
+    },
+    {
+      "start": " 9:55",
+      "end": "10:10",
+      "title": "Break"
+    },
+    {
+      "start": "10:10",
+      "end": "10:45",
+      "title": "Lightning Talks"
+    },
+    {
+      "start": "10:45",
+      "end": "11:00",
+      "title": "Break"
+    },
+    {
+      "start": "11:00",
+      "end": "11:15",
+      "talk": "dont-let-latency-ruin-your-longtail-an-introduction-to-dref-mp4-caching"
+    },
+    {
+      "start": "11:15",
+      "end": "11:40",
+      "talk": "decoder-complexity-aware-av1-encoding-optimization"
+    },
+    {
+      "start": "11:40",
+      "end": "11:55",
+      "title": "Break"
+    },
+    {
+      "start": "11:55",
+      "end": "12:10",
+      "talk": "four-approaches-to-building-trick-view-scrubbing"
+    },
+    {
+      "start": "12:10",
+      "end": "12:30",
+      "title": "Surprise"
+    },
+    {
+      "start": "12:30",
+      "end": "12:35",
+      "title": "Closing Remarks"
     }
   ]
 }
