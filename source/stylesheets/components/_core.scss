@@ -1384,7 +1384,13 @@ h1, h2, h3, h4, h5 {
   }
 
   .talk-title {
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  .talk-description {
+    text-align: left;
   }
 
   .speakers {
@@ -1422,17 +1428,17 @@ h1, h2, h3, h4, h5 {
     }
     
     .speakers-list__name {
-      @include font-size(18px);
+      @include font-size(20px);
       line-height: 1em;
-      margin-bottom: 0.4em;
+      margin-bottom: 0.6em;
     }
     
     .speakers-list__company {
-      @include font-size(18px);
+      @include font-size(22px);
       line-height: 1em;
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
       text-transform: uppercase;
-      color: #fff;
+      color: #000;
     }
     
     p {

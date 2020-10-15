@@ -16,4 +16,4 @@
           %h3.speakers-list__name= speaker.name
           %h4.speakers-list__company= speaker.company
     %h3.talk-title #{details.title}
-    %p #{details.description}
+    %p.talk-description #{details.description.to_s.gsub("\n",'<br />')}
