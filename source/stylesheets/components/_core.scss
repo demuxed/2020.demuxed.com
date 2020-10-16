@@ -669,6 +669,7 @@ h1, h2, h3, h4, h5 {
         background-position: bottom;
         background-repeat: no-repeat;
         padding-bottom: 0.6em;
+        cursor: pointer;
 
         /*font clamp fallbacks*/
           font-size: 3vw;
@@ -986,6 +987,7 @@ h1, h2, h3, h4, h5 {
         .talk__desc {
           color: #fff;
           line-height: 1.7;
+          cursor: pointer;
 
           /*font clamp fallbacks*/
             font-size: 3.3vw;
@@ -1012,6 +1014,34 @@ h1, h2, h3, h4, h5 {
           &:hover {
             color: $brand-yellow;
           }
+        }
+
+        .title__desc {
+          color: #fff;
+          line-height: 1.7;
+
+          /*font clamp fallbacks*/
+            font-size: 3.3vw;
+
+            @include mq($medium) {
+              font-size: 2vw;
+            }
+
+            @include mq($med-large) {
+              font-size: 1.6vw;
+            }
+
+            @include mq($xl-large) {
+              font-size: 1.2vw;
+            }
+
+            @include mq($super-wide) {
+              font-size: 1vw;
+            }
+          /*font clamp fallbacks*/
+
+          font-size: clamp(1.1rem, 1.2vw, 1.4rem)!important;
+
         }
       }
     }
@@ -1468,6 +1498,7 @@ h1, h2, h3, h4, h5 {
       top: 0;
       right: 0;
       z-index: 120;
+      cursor: pointer;
       
       &:hover {
         opacity: 0.6;
