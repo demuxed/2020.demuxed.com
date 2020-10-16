@@ -720,23 +720,23 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
   }
 
-  /*hide and show days*/
-  .wednesday, .thursday {
-    display: none;
-      @include mq($med-large) {
-        display: block;
-      }
-  }
+  // /*hide and show days*/
+  // .wednesday, .thursday {
+  //   display: none;
+  //     @include mq($med-large) {
+  //       display: block;
+  //     }
+  // }
 
-  .tuesday {
-    .date {
-      display: none;
+  // .tuesday {
+  //   .date {
+  //     display: none;
 
-      @include mq($med-large) {
-        display: block;
-      }
-    }
-  }
+  //     @include mq($med-large) {
+  //       display: block;
+  //     }
+  //   }
+  // }
   /*hide and show days*/
 
   .schedule__day-switcher {
