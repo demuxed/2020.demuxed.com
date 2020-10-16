@@ -13,7 +13,7 @@
     {
       "start": " 9:40",
       "end": " 9:55",
-      "talk": "the-quicematic-universe-season-20202021-preview"
+      "talk": "video-vectorization"
     },
     {
       "start": " 9:55",
@@ -23,7 +23,7 @@
     {
       "start": "10:10",
       "end": "10:25",
-      "talk": "video-vectorization"
+      "talk": "the-quicematic-universe-season-20202021-preview"
     },
     {
       "start": "10:25",
@@ -125,7 +125,7 @@
     {
       "start": "12:35",
       "end": "13:00",
-      "talk": "webrtc-does-what-learn-how-robotics-subsecond-broadcast-and-game-streaming-is-powered"
+      "talk": "decoder-complexity-aware-av1-encoding-optimization"
     },
     {
       "start": "13:00",
@@ -136,13 +136,13 @@
   "thursday": [
     {
       "start": " 9:00",
-      "end": " 9:15",
-      "talk": "hey-viddy-hey-viddy-yay-speak-description-to-me"
+      "end": " 9:25",
+      "talk": "low-latency-live-from-a-different-vantage-point"
     },
     {
-      "start": " 9:15",
+      "start": " 9:25",
       "end": " 9:40",
-      "talk": "low-latency-live-from-a-different-vantage-point"
+      "talk": "hey-viddy-hey-viddy-yay-speak-description-to-me"
     },
     {
       "start": " 9:40",
@@ -172,7 +172,7 @@
     {
       "start": "11:15",
       "end": "11:40",
-      "talk": "decoder-complexity-aware-av1-encoding-optimization"
+      "talk": "webrtc-does-what-learn-how-robotics-subsecond-broadcast-and-game-streaming-is-powered"
     },
     {
       "start": "11:40",
