@@ -794,10 +794,6 @@ h1, h2, h3, h4, h5 {
     list-style-type: none;
     margin-bottom: 4em;
 
-    // @include mq($med-large) {
-    //   width: 48%;
-    // }
-
     @include mq($large) {
       width: 33%;
       padding: 0 3%
