@@ -1444,6 +1444,7 @@ h1, h2, h3, h4, h5 {
     position: relative;
     display: inline-block;
     overflow: auto;
+    border-bottom: 2em solid $brand-yellow;
 
     @include mq($large) {
       padding: 4em;
