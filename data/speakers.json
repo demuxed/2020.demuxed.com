@@ -10,6 +10,11 @@
     "talk": "dont-let-latency-ruin-your-longtail-an-introduction-to-dref-mp4-caching"
   },
   {
+    "name": "Caitiln O'Callaghan",
+    "company": "Streamline",
+    "talk": "building-an-8k-encoder--live-streaming-platform-using-off-the-shelf-stuff-in--10-minutes"
+  },
+  {
     "name": "Christian Feldmann",
     "company": "Bitmovin",
     "talk": "the-hypothetical-reference-decoder-or-vbvbitrate-is-not-bitrate"
@@ -28,7 +33,7 @@
   {
     "name": "Evan Farina",
     "company": "LinkedIn",
-    "talk": "be-vewy-vewy-quiet-were-hunting-bugs"
+    "talk": "how-big-buck-bunny-helped-track-down-bugs"
   },
   {
     "name": "Frank Paolino",
@@ -77,7 +82,7 @@
   },
   {
     "name": "Michael Dale",
-    "company": "Ellation",
+    "company": "Crunchyroll",
     "talk": "playback-on-edge--or-how-i-learned-to-stop-worrying-and-love-serverless"
   },
   {
@@ -126,11 +131,6 @@
     "talk": "its-time-to-rebuild-your-player-with-web-components"
   },
   {
-    "name": "Steve Robertson",
-    "company": "YouTube",
-    "talk": "handling-err-handling-err-handling-errors-in-video-playback"
-  },
-  {
     "name": "Vanessa Pyne",
     "company": "Daily.co",
     "talk": "and-now-presenting-what-no-one-asked-for-how-to-live-stream-a-laserdisc"
@@ -138,7 +138,7 @@
   {
     "name": "Vibhoothi",
     "company": "Videolan / Xiph",
-    "talk": "achieving-faster-av1-encoding-on-arm-devices-using-rav1e"
+    "talk": "av1-and-arm"
   },
   {
     "name": "Zoe Liu",

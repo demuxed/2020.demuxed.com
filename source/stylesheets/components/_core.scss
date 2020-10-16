@@ -123,8 +123,34 @@ h1, h2, h3, h4, h5 {
       color: $brand-yellow;
       text-transform: capitalize;
       font-weight: 500;
-      margin: 0.2em 0 1.6em;
+      margin: 0.2em 0 1em;
       font-size: clamp(1.6rem, 2vw, 2.1rem)!important;
+  }
+
+  span.timezones {
+    /*font clamp fallbacks*/
+      font-size: 3vw;
+
+      @include mq($small) {
+        font-size: 2.5vw;
+      }
+
+      @include mq($medium) {
+        font-size: 1.5vw;
+      }
+
+      @include mq($large) {
+        font-size: 1vw;
+      }
+    /*font clamp fallbacks*/
+
+      font-family: $default-sans;
+      display: block;
+      color: #fff;
+      text-transform: capitalize;
+      font-weight: 500;
+      margin: 0.2em 0 1.6em;
+      font-size: clamp(1rem, 1.5vw, 1.6rem)!important;
   }
 }
 
@@ -669,6 +695,7 @@ h1, h2, h3, h4, h5 {
         background-position: bottom;
         background-repeat: no-repeat;
         padding-bottom: 0.6em;
+        cursor: pointer;
 
         /*font clamp fallbacks*/
           font-size: 3vw;
@@ -714,29 +741,29 @@ h1, h2, h3, h4, h5 {
 }
 
 .days {
-  @include mq($med-large) {
+  @include mq($large) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
-  /*hide and show days*/
-  .wednesday, .thursday {
-    display: none;
-      @include mq($med-large) {
-        display: block;
-      }
-  }
+  // /*hide and show days*/
+  // .wednesday, .thursday {
+  //   display: none;
+  //     @include mq($med-large) {
+  //       display: block;
+  //     }
+  // }
 
-  .tuesday {
-    .date {
-      display: none;
+  // .tuesday {
+  //   .date {
+  //     display: none;
 
-      @include mq($med-large) {
-        display: block;
-      }
-    }
-  }
+  //     @include mq($med-large) {
+  //       display: block;
+  //     }
+  //   }
+  // }
   /*hide and show days*/
 
   .schedule__day-switcher {
@@ -792,10 +819,6 @@ h1, h2, h3, h4, h5 {
   .day {
     list-style-type: none;
     margin-bottom: 4em;
-
-    @include mq($med-large) {
-      width: 48%;
-    }
 
     @include mq($large) {
       width: 33%;
@@ -888,7 +911,7 @@ h1, h2, h3, h4, h5 {
       justify-content: center;
 
       .talk__img {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         width: 13%;
@@ -904,10 +927,13 @@ h1, h2, h3, h4, h5 {
           padding: 6px;
         }
 
+        @include mq($x-large) {
+          display: flex;
+        }
+
         @include mq($wide) {
           width: 18%;
           padding: 8px;
-
         }
 
         .schedule-list__img {
@@ -917,7 +943,6 @@ h1, h2, h3, h4, h5 {
 
       .talk__text {
         width: 80%;
-        padding-left: 2em;
 
         @include mq($medium) {
           width: 60%;
@@ -925,6 +950,11 @@ h1, h2, h3, h4, h5 {
 
         @include mq($large) {
           width: 77%;
+        }
+
+        @include mq($x-large) {
+          width: 77%;
+          padding-left: 2em;
         }
 
         @include mq($wide) {
@@ -986,6 +1016,7 @@ h1, h2, h3, h4, h5 {
         .talk__desc {
           color: #fff;
           line-height: 1.7;
+          cursor: pointer;
 
           /*font clamp fallbacks*/
             font-size: 3.3vw;
@@ -1012,6 +1043,34 @@ h1, h2, h3, h4, h5 {
           &:hover {
             color: $brand-yellow;
           }
+        }
+
+        .title__desc {
+          color: #fff;
+          line-height: 1.7;
+
+          /*font clamp fallbacks*/
+            font-size: 3.3vw;
+
+            @include mq($medium) {
+              font-size: 2vw;
+            }
+
+            @include mq($med-large) {
+              font-size: 1.6vw;
+            }
+
+            @include mq($xl-large) {
+              font-size: 1.2vw;
+            }
+
+            @include mq($super-wide) {
+              font-size: 1vw;
+            }
+          /*font clamp fallbacks*/
+
+          font-size: clamp(1.1rem, 1.2vw, 1.4rem)!important;
+
         }
       }
     }
@@ -1375,9 +1434,27 @@ h1, h2, h3, h4, h5 {
 
   }
   
-  &.modal:target {
-    visibility: visible;
-    opacity: 1;
+  .speaker_details {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .talk-title {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  .talk-description {
+    text-align: left;
+  }
+
+  .speakers {
+    display: flex;
+    justify-content: space-around;
   }
   
   .modal__container {
@@ -1389,6 +1466,7 @@ h1, h2, h3, h4, h5 {
     position: relative;
     display: inline-block;
     overflow: auto;
+    border-bottom: 2em solid $brand-yellow;
 
     @include mq($large) {
       padding: 4em;
@@ -1410,17 +1488,17 @@ h1, h2, h3, h4, h5 {
     }
     
     .speakers-list__name {
-      @include font-size(18px);
+      @include font-size(20px);
       line-height: 1em;
-      margin-bottom: 0.4em;
+      margin-bottom: 0.6em;
     }
     
     .speakers-list__company {
-      @include font-size(18px);
+      @include font-size(22px);
       line-height: 1em;
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
       text-transform: uppercase;
-      color: #fff;
+      color: #000;
     }
     
     p {
@@ -1450,6 +1528,7 @@ h1, h2, h3, h4, h5 {
       top: 0;
       right: 0;
       z-index: 120;
+      cursor: pointer;
       
       &:hover {
         opacity: 0.6;

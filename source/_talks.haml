@@ -1,9 +1,19 @@
-%section.modal#popup-scott-kellicker
-  %div.modal__container.popup
-    %a.modal-btn{href: "#scott-kellicker"}
-    %div.speakers-list__img-wrap
-      = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
-    %h3.speakers-list__name Scott Kellicker
-    %h4.speakers-list__company Wowza
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+- id = talk[0]
+- details = talk[1]
+
+%div.modal{id: 'popup-' + id}
+  %div.modal__container{role: "dialog", aria: {modal: true, labelledby: "#{id}-title"}}
+    %a.modal-btn{onclick: 'hideTalkModal(event);'}
+    .speakers
+      - details.speakers.each do |speaker_name|
+        - speaker = speakers.find{ |s| s.name == speaker_name if s.name }
+        .speaker_details
+          %div.speakers-list__img-wrap
+            - if speaker.custom_photo_url
+              = image_tag(speaker.custom_photo_url, alt: "", class: "speakers-list__img")
+            - else
+              = image_tag("https://demuxed-speakers-2020.imgix.net/#{speaker.name.downcase.split(' ').join('-')}.jpg?w=170&h=240&fit=facearea&facepad=3&auto=format,compress&q=70", alt: "", class: "speakers-list__img")
+          %h3.speakers-list__name= speaker.name
+          %h4.speakers-list__company= speaker.company
+    %h3.talk-title #{details.title}
+    %p.talk-description #{details.description}

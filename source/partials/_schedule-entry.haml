@@ -1,0 +1,65 @@
+- talk = data.talks[session.talk] if session.talk
+- speaker = talk.speakers.first if session.talk
+- full_first_speaker = data.speakers.select {|v| v['name'] == speaker }.first if session.talk
+
+- if session.talk
+  %li.talk
+    %div.talk__img
+      - if full_first_speaker.custom_photo_url
+        = image_tag(full_first_speaker.custom_photo_url, alt: "", class: "schedule-list__img")
+      - else
+        = image_tag("https://demuxed-speakers-2020.imgix.net/#{speaker.downcase.split(' ').join('-')}.jpg?w=170&h=240&fit=facearea&facepad=3&auto=format,compress&q=70", alt: "", class: "schedule-list__img")
+    %div.talk__text
+      %h4.talk__time
+        #{session.start} - #{session.end}
+      %h4.talk__name
+        = talk.speakers.join(' & ')
+      %a.talk__desc{onclick: "showTalkModal(event, 'popup-#{session.talk}');"}
+        - if session.title 
+          = session.title
+        - else
+          = talk.title
+- elsif ['Opening Remarks', 'Closing Remarks'].include?(session.title)
+  %li.talk
+    %div.talk__img
+      = image_tag("https://demuxed-speakers-2020.imgix.net/mmcc.jpg?w=170&h=240&fp-x=0.49&fp-y=0.9&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70", alt: "", class: "schedule-list__img")
+    %div.talk__text
+      %h4.talk__time
+        #{session.start} - #{session.end}
+      %h4.talk__name
+        Matthew McClure
+      %a.title__desc{}
+        = session.title
+- elsif session.title == 'Lightning Talks'
+  %li.talk
+    %div.talk__img
+      = image_tag("https://demuxed-speakers-2020.imgix.net/phil-cluff.jpg?w=170&h=240&fp-x=0.49&fp-y=0.9&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70", alt: "", class: "schedule-list__img")
+    %div.talk__text
+      %h4.talk__time
+        #{session.start} - #{session.end}
+      %h4.talk__name
+        Lightning Talks
+      %a.talk__desc{href: 'https://airtable.com/shrbpxXgBswidfYSW', target: '_blank'}
+        Submit your lightning talks here!
+- elsif session.title == 'Surprise'
+  %li.talk
+    %div.talk__img
+      = image_tag("https://demuxed-speakers-2020.imgix.net/mystery.jpg?w=170&h=240&fp-x=0.49&fp-y=0.9&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70", alt: "", class: "schedule-list__img")
+    %div.talk__text
+      %h4.talk__time
+        #{session.start} - #{session.end}
+      %h4.talk__name
+        Mystery Guest
+      %a.title__desc{}
+        ?
+- elsif session.title == 'Break'
+  %li.break
+    %h4.break__type
+      15min break
+    = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
+- else
+  %li.talk
+    %div.talk__text
+      %h4.talk__time
+        #{session.start} - #{session.end}
+        #{session.title}
