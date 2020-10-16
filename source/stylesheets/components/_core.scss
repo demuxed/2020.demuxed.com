@@ -715,10 +715,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .days {
-  @include mq($med-large) {
+  @include mq($large) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   // /*hide and show days*/
@@ -794,9 +794,9 @@ h1, h2, h3, h4, h5 {
     list-style-type: none;
     margin-bottom: 4em;
 
-    @include mq($med-large) {
-      width: 48%;
-    }
+    // @include mq($med-large) {
+    //   width: 48%;
+    // }
 
     @include mq($large) {
       width: 33%;
@@ -889,7 +889,7 @@ h1, h2, h3, h4, h5 {
       justify-content: center;
 
       .talk__img {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         width: 13%;
@@ -905,10 +905,13 @@ h1, h2, h3, h4, h5 {
           padding: 6px;
         }
 
+        @include mq($x-large) {
+          display: flex;
+        }
+
         @include mq($wide) {
           width: 18%;
           padding: 8px;
-
         }
 
         .schedule-list__img {
@@ -918,7 +921,6 @@ h1, h2, h3, h4, h5 {
 
       .talk__text {
         width: 80%;
-        padding-left: 2em;
 
         @include mq($medium) {
           width: 60%;
@@ -926,6 +928,11 @@ h1, h2, h3, h4, h5 {
 
         @include mq($large) {
           width: 77%;
+        }
+
+        @include mq($x-large) {
+          width: 77%;
+          padding-left: 2em;
         }
 
         @include mq($wide) {
