@@ -9,7 +9,7 @@
   // Close all modals on escape key
   document.onkeydown = function(event) {
     if (event.key === "Escape" || event.key === "Esc") {
-      document.querySelectorAll('.modal').forEach(modal => {
+      document.querySelectorAll('.modal').forEach(function(modal) {
         modal.style.visibility = 'hidden';
         modal.opacity = '0';
       })
