@@ -63,6 +63,17 @@
         Diane Strutner & Alicia Pritchett
       %a.talk__desc{onclick: "showTalkModal(event, 'popup-wism');"}
         Women in Streaming Media Round Table
+- elsif session.title == 'WISM Networking'
+  %li.talk
+    %div.talk__img
+      = image_tag("https://demuxed-speakers-2020.imgix.net/wism-2.jpg?w=170&h=240&auto=format,compress&q=70", alt: "", class: "schedule-list__img")
+    %div.talk__text
+      %h4.talk__time
+        #{session.start} - #{session.end}
+      %h4.talk__name
+        Women in Streaming Media Networking
+      %a.talk__desc{href: 'https://airtable.com/shrbpxXgBswidfYSW', target: '_blank'}
+        A networking event for all attendees who identify as women. RSVP here!
 - elsif session.title == 'Break'
   %li.break
     %h4.break__type

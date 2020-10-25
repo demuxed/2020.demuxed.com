@@ -73,6 +73,11 @@
   ],
   "wednesday": [
     {
+      "start": " 8:15",
+      "end": " 9:00",
+      "title": "WISM Networking"
+    },
+    {
       "start": " 9:00",
       "end": " 9:15",
       "talk": "and-now-presenting-what-no-one-asked-for-how-to-live-stream-a-laserdisc"
