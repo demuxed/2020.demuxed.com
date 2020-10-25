@@ -17,3 +17,20 @@
           %h4.speakers-list__company= speaker.company
     %h3.talk-title #{details.title}
     %p.talk-description #{details.description}
+
+%div.modal{id: 'popup-wism'}
+  %div.modal__container{role: "dialog", aria: {modal: true, labelledby: "wism-title"}}
+    %a.modal-btn{onclick: 'hideTalkModal(event);'}
+    .speakers
+      .speaker_details
+        %div.speakers-list__img-wrap
+          = image_tag("https://demuxed-speakers-2020.imgix.net/alicia-pritchett.jpg?w=170&h=240&fit=facearea&facepad=3&auto=format,compress&q=70", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name= 'Alicia Pritchett'
+        %h4.speakers-list__company= 'Fastly'
+      .speaker_details
+        %div.speakers-list__img-wrap
+          = image_tag("https://demuxed-speakers-2020.imgix.net/diane-strutner.jpg?w=170&h=240&fit=facearea&facepad=3&auto=format,compress&q=70", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name= 'Diane Strutner'
+        %h4.speakers-list__company= 'Datazoom'
+    %h3.talk-title= 'Women in Streaming Media Round Table'
+    %p.talk-description= 'Alicia and Diane join Phil and Matt for a chat about the Women in Streaming Media group.<br><br> The Women in Streaming Media (WSM), a group for women in the streaming media technology space, whose mission is to increase diversity and give more visibility to women leaders within the streaming media industry.'
