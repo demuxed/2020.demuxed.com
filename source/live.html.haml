@@ -8,7 +8,7 @@ title: Demuxed 2020
   var section = document.getElementById('js-live-embed');
   var iframe = document.createElement('iframe');
   var search = window.location.search || '';
-  var mq = {
+  var mqWidth = {
     xs: 0,
     sm: 576,
     md: 768,
@@ -17,14 +17,22 @@ title: Demuxed 2020
     '2xl': 1300,
     '3xl': 1500,
   };
+
+  function setHeight () {
+    var height = window.innerHeight;
+    var width = window.innerWidth;
+    if (width < mqWidth.xl) {
+      // this is the width when the chat is below the player
+      iframe.setAttribute('height', '1200');
+    } else {
+      iframe.setAttribute('height', height - 100); // subtract a bit for the top nav and bottom footer
+    }
+  }
   // iframe.setAttribute('src', 'https://live-2020-demuxed-com.vercel.app/' + search);
   iframe.setAttribute('src', 'https://live-2020-demuxed-com-git-dj-responsive.demuxed.vercel.app/' + search);
   // iframe.setAttribute('src', 'http://localhost:3000/' + search);
-  var height = window.innerHeight;
-  if (height < mq.md) {
-    iframe.setAttribute('height', '1200'); // subtract 200 for the top nav and the bottom line of the footer
-  } else {
-    iframe.setAttribute('height', height - 200); // subtract 200 for the top nav and the bottom line of the footer
-  }
-  // iframe.setAttribute('scrolling', 'no');
   section.appendChild(iframe);
+
+  setHeight();
+
+  window.onresize = setHeight;
