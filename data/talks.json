@@ -23,7 +23,7 @@
   },
   "building-an-8k-encoder--live-streaming-platform-using-off-the-shelf-stuff-in--10-minutes": {
     "title": "Building an 8k encoder + live streaming platform using off the shelf stuff in < 10 minutes",
-    "description": "Coming Soon",
+    "description": "Building an 8k encoder + live streaming platform using off the shelf stuff in &lt; 10 minutes<br><br>In this talk, we will show you how to build our soon to be released Streamline2 project. <br><br>Streamline2 is an an end-to-end, broadcast quality 8k video streaming pipeline using parts available on Amazon Prime, open source components, and the public cloud or servers of your choice. It’s easy to set up, ultra high quality, and is a great basis to start learning and building out broadcast quality live streaming systems. That can scale to audiences as large as you want. <br><br>All software and hardware used in this project with accompanying documentation can be found at “http://streamline.wtf”. <br><br>You might be wondering, does 8k really matter? Probably not for delivery use cases. But it’s demonstrative of the power of this system. That same power can be used to stream 4k and 1080p video with next gen codecs such as AV1 and VP9 in adaptive bitrates in extremely high quality as well as multiple streams simultaneously. <br><br>Come learn how everything works. All of it.",
     "speakers": [
       "Colleen Henry",
       "Caitlin O'Callaghan"
