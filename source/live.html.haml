@@ -3,7 +3,6 @@ title: Demuxed 2020
 ---
 
 %section.live-embed#js-live-embed
-  // %iframe{:src => "https://live-2020-demuxed-com.vercel.app/"}
 :javascript
   var section = document.getElementById('js-live-embed');
   var iframe = document.createElement('iframe');
@@ -31,8 +30,6 @@ title: Demuxed 2020
     }
   }
   iframe.setAttribute('src', 'https://live-2020-demuxed-com.vercel.app/' + search);
-  // iframe.setAttribute('src', 'https://live-2020-demuxed-com-git-stylez.demuxed.vercel.app/' + search);
-  // iframe.setAttribute('src', 'http://localhost:3000/' + search);
   section.appendChild(iframe);
 
   setHeight();
