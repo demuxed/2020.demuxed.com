@@ -24,7 +24,8 @@ title: Demuxed 2020
     var width = window.innerWidth;
     if (width < mqWidth.xl) {
       // this is the width when the chat is below the player
-      iframe.setAttribute('height', '1200');
+      // we want a very tall height because all the chat is underneath the player
+      iframe.setAttribute('height', '2000');
     } else {
       iframe.setAttribute('height', height - 100); // subtract a bit for the top nav and bottom footer
     }
