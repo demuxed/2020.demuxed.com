@@ -7,6 +7,7 @@ title: Demuxed 2020
 :javascript
   var section = document.getElementById('js-live-embed');
   var iframe = document.createElement('iframe');
+  iframe.setAttribute('allowfullscreen', 'true');
   var search = window.location.search || '';
   var mqWidth = {
     xs: 0,
