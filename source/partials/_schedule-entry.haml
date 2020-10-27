@@ -15,7 +15,7 @@
       %h4.talk__name
         = talk.speakers.join(' & ')
       %a.talk__desc{onclick: "showTalkModal(event, 'popup-#{session.talk}');"}
-        - if session.title 
+        - if session.title
           = session.title
         - else
           = talk.title
@@ -73,7 +73,7 @@
       %h4.talk__name
         Women in Streaming Media Networking
       %a.talk__desc{href: 'https://airtable.com/shrydIgm011Sggtde', target: '_blank'}
-        A networking event for all attendees who identify as women. RSVP here!
+        A networking event open to all attendees that want to learn more about getting involed with Women in Streaming Media. RSVP here!
 - elsif session.title == 'Break'
   %li.break
     %h4.break__type
