@@ -1,5 +1,7 @@
 {
     "redirects" : [
-        {"source" : "/submit", "destination" : "https://tickets.demuxed.com", "permanent": false}
+        {"source" : "/submit", "destination" : "https://tickets.demuxed.com", "permanent": false},
+        {"source" : "/swag", "destination" : "https://www.notion.so/mux/Demuxed-Digital-Swag-78a183fe39e94b67893efef217a355e0", "permanent" : false},
+        {"source" : "/wism", "destination" : "https://airtable.com/shrydIgm011Sggtde", "permanent" : false}
     ]
 }
