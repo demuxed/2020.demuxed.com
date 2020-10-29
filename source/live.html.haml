@@ -26,7 +26,12 @@ title: Demuxed 2020
       // we want a very tall height because all the chat is underneath the player
       iframe.setAttribute('height', '2000');
     } else {
-      iframe.setAttribute('height', height - 100); // subtract a bit for the top nav and bottom footer
+      // subtract a bit for the top nav and bottom footer
+      height = height - 200;
+      if (height < 900) {
+        height = '900';
+      }
+      iframe.setAttribute('height', height);
     }
   }
   iframe.setAttribute('src', 'https://live-2020-demuxed-com-git-dj-plyr.demuxed.vercel.app/' + search);
