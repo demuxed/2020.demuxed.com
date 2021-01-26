@@ -1,14 +1,14 @@
 - id = talk[0]
 - details = talk[1]
 
-%div.modal{id: 'popup-' + id}
-  %div.modal__container{role: "dialog", aria: {modal: true, labelledby: "#{id}-title"}}
+.modal{id: 'popup-' + id}
+  .modal__container{role: "dialog", aria: {modal: true, labelledby: "#{id}-title"}}
     %a.modal-btn{onclick: 'hideTalkModal(event);'}
     .speakers
       - details.speakers.each do |speaker_name|
         - speaker = speakers.find{ |s| s.name == speaker_name if s.name }
         .speaker_details
-          %div.speakers-list__img-wrap
+          .speakers-list__img-wrap
             - if speaker.custom_photo_url
               = image_tag(speaker.custom_photo_url, alt: "", class: "speakers-list__img")
             - else
@@ -18,12 +18,12 @@
     %h3.talk-title #{details.title}
     %p.talk-description #{details.description}
 
-%div.modal{id: 'popup-wism'}
-  %div.modal__container{role: "dialog", aria: {modal: true, labelledby: "wism-title"}}
+.modal#popup-wism
+  .modal__container{role: "dialog", aria: {modal: true, labelledby: "wism-title"}}
     %a.modal-btn{onclick: 'hideTalkModal(event);'}
     .speakers
       .speaker_details
-        %div.speakers-list__img-wrap
+        .speakers-list__img-wrap
           = image_tag("https://demuxed-speakers-2020.imgix.net/alicia-pritchett.jpg?w=170&h=240&fit=facearea&facepad=3&auto=format,compress&q=70", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name= 'Alicia Pritchett'
         %h4.speakers-list__company= 'Fastly'
